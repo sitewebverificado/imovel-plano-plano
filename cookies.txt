@@ -1,0 +1,20 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+click.planoeplano.com.br	TRUE	/	FALSE	1999999999	dwac_eb13f8f43571cdd489e43b8cee	WmuABWPLYZ4QQLf_4f6O0eb09l_7R2yXacM%3D|dw-only|||BRL|false|America%2FSao%5FPaulo|true
+click.planoeplano.com.br	TRUE	/	FALSE	1999999999	cqcid	adwFHb3Ycak6bA7X5EgBq30vrG
+click.planoeplano.com.br	TRUE	/	FALSE	1999999999	cquid	||
+click.planoeplano.com.br	TRUE	/	FALSE	1999999999	sid	WmuABWPLYZ4QQLf_4f6O0eb09l_7R2yXacM
+click.planoeplano.com.br	TRUE	/	FALSE	1999999999	dwanonymous_a09c4e28770a95df801eff3922b92e98	adwFHb3Ycak6bA7X5EgBq30vrG
+click.planoeplano.com.br	TRUE	/	FALSE	1999999999	dwsid	2jYmcotT4CNo_2Bep49_hGapUCgT3-0qEXwks7Ghq0YokDqCs9L_peGVsOi98w0wv_TyQJFp1lAVYeQTAAAPkg==
+service.force.com	TRUE	/	FALSE	1999999999	CookieConsentPolicy	0:0
+service.force.com	TRUE	/	FALSE	1999999999	LSKey-c$CookieConsentPolicy	0:0
+.force.com	TRUE	/	FALSE	1999999999	BrowserId	iuFH6E69Ee-rsGE4Bla5xw
+service.force.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+planoeplano.my.salesforce.com	TRUE	/	FALSE	1999999999	CookieConsentPolicy	0:1
+planoeplano.my.salesforce.com	TRUE	/	FALSE	1999999999	LSKey-c$CookieConsentPolicy	0:1
+.salesforce.com	TRUE	/	FALSE	1999999999	BrowserId	iwI-Rk69Ee-TYQd-8B8soA
+planoeplano.my.salesforce.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+click.planoeplano.com.br	TRUE	/	FALSE	1999999999	__cq_dnt	0
+click.planoeplano.com.br	TRUE	/	FALSE	1999999999	dw_dnt	0
+click.planoeplano.com.br	TRUE	/	FALSE	1999999999	SameSite	None
+

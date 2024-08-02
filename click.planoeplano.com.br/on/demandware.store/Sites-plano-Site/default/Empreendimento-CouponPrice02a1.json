@@ -1,0 +1,7 @@
+{
+  "action": "Empreendimento-CouponPrice",
+  "queryString": "pid=a0K4v00000df9kNEAQ",
+  "locale": "default",
+  "success": false,
+  "errorMessage": "Este cupom não é válido."
+}

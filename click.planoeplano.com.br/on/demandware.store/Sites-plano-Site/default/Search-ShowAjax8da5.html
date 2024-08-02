@@ -1,0 +1,3683 @@
+
+    
+
+<div class="container px-4 px-md-2">
+    <div class="banner-plano hero hero-padding slant-down search-banner border-bottom row py-4" style="background-image: none">
+        
+        <div class="col-12 col-lg-4 mb-0 mb-md-4 mb-lg-0">
+            <h1 class="search--title">
+                Encontre aqui o seu pr&oacute;ximo endere&ccedil;o:
+            </h1>
+        </div>
+        <div class="col-12 col-md-auto ml-md-auto d-block d-md-flex align-items-end">
+            <form action="#" class="form">
+                <div class="d-flex flex-wrap nav-filters js-nav-filters">
+                    
+                    <div class="layoutDivRegiao col-6 col-md-auto py-3 py-md-0">
+                        
+                        <select class="custom-select search-custom-select border-0 js-regionFilter js-regionFilterMore">
+
+                            <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=imoveis">
+                                Regi&atilde;o de Interesse
+                            </option>
+
+                            
+                                <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-centro" >
+                                    S&atilde;o Paulo - Centro
+                                </option>
+                            
+                                <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-leste" >
+                                    S&atilde;o Paulo - Zona Leste
+                                </option>
+                            
+                                <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-norte" >
+                                    S&atilde;o Paulo - Zona Norte
+                                </option>
+                            
+                                <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-oeste" >
+                                    S&atilde;o Paulo - Zona Oeste
+                                </option>
+                            
+                                <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-sul" >
+                                    S&atilde;o Paulo - Zona Sul
+                                </option>
+                            
+                        </select>
+                    </div>
+
+                    
+                    <div class="layoutDivbair col-6 col-md-auto py-3 py-md-0">
+                        
+
+                        <div class="multiple-select neighborhood-moba custom-select search-custom-select border-0">
+                            <span class="multiple-select-default js-multipleSelectToggle">
+                                
+                                    Bairro<span id="bairro"></span>
+                                
+                            </span>
+                            <div class="multiple-select-wrapper wrapper-left-desk">
+                                
+                                    <span class="js-multipleFilter multiple-select-option"
+                                        data-url="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=district&amp;prefv2=Barra%20Funda">
+                                        <span
+                                            class="custom-form-check-input getFilterBair ">
+                                            <i class="icon icon-check text-white font-size-xs"></i>
+                                        </span>
+                                        Barra Funda
+                                    </span>
+                                
+                            </div>
+                        </div>
+                        <span aria-hidden="true" class="filterClearURL clearFilterIndv fa fa-fw fa-times clearFilBairro d-none text-danger ml-3" data-url="null"></span>
+                    </div>
+
+                    
+                    <div class="layoutDivStatus col-6 col-md-auto py-3 py-md-0">
+                        <div class="multiple-select custom-select search-custom-select border-0">
+                            <span class="multiple-select-default js-multipleSelectToggle">
+                                
+                                    Status da Obra<span id="status"></span>
+                                
+                            </span>
+                            <div class="multiple-select-wrapper wrapper-left-desk">
+                                
+                                    <span class="js-multipleFilter multiple-select-option"
+                                        data-url="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda">
+                                        <span
+                                            class="custom-form-check-input getStatusObra selected">
+                                            <i class="icon icon-check text-white font-size-xs"></i>
+                                        </span>
+                                        Em constru&ccedil;&atilde;o
+                                    </span>
+                                
+                                    <span class="js-multipleFilter multiple-select-option"
+                                        data-url="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o%7cLan%c3%a7amento">
+                                        <span
+                                            class="custom-form-check-input getStatusObra ">
+                                            <i class="icon icon-check text-white font-size-xs"></i>
+                                        </span>
+                                        Lan&ccedil;amento
+                                    </span>
+                                
+                            </div>
+                        </div>
+                        <span aria-hidden="true" class="filterClearURL clearFilterIndv fa fa-fw fa-times clearFilStatus d-none text-danger ml-3" data-url="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda"></span>
+                    </div>
+                    
+                    <div class="layoutDivFilters adj-moba col-12 col-md-auto py-3 py-md-0 px-0 px-md-2 mt-4 mt-md-0">
+                        <button type="button" class="btn btn-link btn-filters adj-moba text-dark font-size-md"
+                            data-toggle="modal" data-target="#moreFilters">
+                            <span class="d-none d-md-inline-block">Mais Filtros<span id="getMoreFilter"></span></span>
+                            <span class="d-flex d-md-none align-items-center filterMobile"><img src="../../../demandware.static/Sites-plano-Site/-/default/dw2bd7bab2/images/filter-btn.png" alt="Filtrar resultados" />Filtrar resultados<span id="getMoreFilterMobile" class="getMoreFilterMobile d-none"></span></span>
+                        </button>
+                        <span aria-hidden="true" class="clearFilterIndv fa fa-fw fa-times clearFilMore d-none text-danger ml-3 js-reset-search" data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda"></span>
+                    </div>
+                </div>
+                <div id="moreFilters" class="modal search-more-filter pr-0">
+    <div class="modal-dialog search__modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content rounded-0 border-0 min-vh-100 py-4 pl-md-4 pr-md-5">
+            <div class="modal-body custom-modal-scrollable pr-md-5 mr-md-5">
+                <div class="container-fluid more-filters-modal">
+                    <button type="button" class="close d-md-none" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    
+                    <div class="row">
+                        <div class="col-8">
+                            <h3 class="font-size-xl letter-spacing">
+                                Utilize os filtros para um melhor resultado:
+                            </h3>
+                        </div>
+                        <div class="col-4">
+                            <img src="../../../demandware.static/Sites-plano-Site/-/default/dw22030df1/images/logo-mcmv.webp" alt="Minha Casa Minha Vida"
+                                width="80%" loading="lazy" />
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <p>
+                                Onde voc&ecirc; deseja morar?
+                            </p>
+                        </div>
+                        
+                        <div class="col-12 col-md-6 mb-3 mb-md-0">
+                            
+                            <select class="custom-select search-custom-select js-regionFilterMore">
+                                <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=imoveis">
+                                    Regi&atilde;o de Interesse
+                                </option>
+                                
+                                    <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-centro" >
+                                        S&atilde;o Paulo - Centro
+                                    </option>
+                                
+                                    <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-leste" >
+                                        S&atilde;o Paulo - Zona Leste
+                                    </option>
+                                
+                                    <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-norte" >
+                                        S&atilde;o Paulo - Zona Norte
+                                    </option>
+                                
+                                    <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-oeste" >
+                                        S&atilde;o Paulo - Zona Oeste
+                                    </option>
+                                
+                                    <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-sul" >
+                                        S&atilde;o Paulo - Zona Sul
+                                    </option>
+                                
+                            </select>
+                        </div>
+
+                        
+                        <div class="col-12 col-md-6 mb-3 mb-md-0">
+                            <div class="multiple-select custom-select search-custom-select">
+                                <span class="multiple-select-default js-multipleSelectToggle">
+                                    
+                                        Bairro
+                                    
+                                </span>
+                                <div class="multiple-select-wrapper">
+                                    
+                                        <span class="js-multipleFilter multiple-select-option"
+                                            data-url="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=district&amp;prefv2=Barra%20Funda">
+                                            <span
+                                                class="custom-form-check-input ">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </span>
+                                            Barra Funda
+                                        </span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <input type="hidden" class="js-checkedStatus" checked-status=""/>
+                                <p class="letter-spacing">
+                                    Qual tipo de im&oacute;vel voc&ecirc; est&aacute; buscando?
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-wrap">
+                                    <div class="refinements">
+                                        <div class="refinement">
+                                            <div class="col-sm-12">
+                                                <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0 noWrapFilters">
+                                                    
+                                                        <input type="hidden" class="js-statusValues"
+                                                            status-values="Em constru&ccedil;&atilde;o"
+                                                            url="Search-ShowAjaxb26c.html?cgid=barra-funda"/>
+                                                        <li 
+                                                            class="form-check mb-3 pl-0">
+                                                            <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda"
+                                                                class="">
+                                                                
+                                                                    <input class="form-check-input d-none"
+                                                                        type="checkbox" value="" checked />
+                                                                
+                                                                <label class="custom-form-check-input">
+                                                                    <i
+                                                                        class="icon icon-check text-white font-size-xs"></i>
+                                                                </label>
+                                                                <span class="
+                                                                    selected
+                                                                "
+                                                                aria-hidden="true">
+                                                                Em constru&ccedil;&atilde;o
+                                                                </span>
+                                                                <span class="sr-only selected-assistive-text">
+                                                                    selecionado
+                                                                    Atualmente refinado por Status da Obra: Em constru&ccedil;&atilde;o
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    
+                                                        <input type="hidden" class="js-statusValues"
+                                                            status-values="Lan&ccedil;amento"
+                                                            url="Search-ShowAjax4cdd.html?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o%7cLan%c3%a7amento"/>
+                                                        <li 
+                                                            class="form-check mb-3 pl-0">
+                                                            <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o%7cLan%c3%a7amento"
+                                                                class="">
+                                                                
+                                                                        <input class="form-check-input d-none"
+                                                                            type="checkbox" value="" />
+                                                                
+                                                                <label class="custom-form-check-input">
+                                                                    <i
+                                                                        class="icon icon-check text-white font-size-xs"></i>
+                                                                </label>
+                                                                <span class=""
+                                                                aria-hidden="true">
+                                                                Lan&ccedil;amento
+                                                                </span>
+                                                                <span class="sr-only selected-assistive-text">
+                                                                    
+                                                                    Refinar por Status da Obra: Lan&ccedil;amento
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    
+
+                                        
+                    
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <input type="hidden" class="js-checkedDormitory" checked-dormitory=""/>
+                                <p class="letter-spacing">
+                                    Quantos dormit&oacute;rios voc&ecirc; procura?
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-wrap">
+                                    <div class="refinements">
+                                        <div class="refinement">
+                                            <div class="col-sm-12">
+                                                <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0 noWrapFilters">
+                                                    
+                                                        <input type="hidden" class="js-dormitoryValues"
+                                                            dormitory-values="1"
+                                                            url="Search-ShowAjaxb8f4.html?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=dormitoryQuantity&amp;prefv2=1"/>
+                                                        <li 
+                                                            class="form-check mb-3 pl-0">
+                                                            <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=dormitoryQuantity&amp;prefv2=1"
+                                                                class="">
+
+                                                                
+                                                                        <input class="form-check-input d-none"
+                                                                            type="checkbox" value="" />
+                                                                
+                                                                <label class="custom-form-check-input">
+                                                                    <i
+                                                                        class="icon icon-check text-white font-size-xs"></i>
+                                                                </label>
+                                                                <span class="adjMobaSpan "
+                                                                aria-hidden="true">
+
+                                                                
+                                                                        1 Dormit&oacute;rio
+                                                                
+                                                                </span>
+                                                                <span class="sr-only selected-assistive-text">
+                                                                    
+                                                                    Refinar por N&uacute;mero de dormit&oacute;rios: 1
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    
+                                                        <input type="hidden" class="js-dormitoryValues"
+                                                            dormitory-values="2"
+                                                            url="Search-ShowAjax188e.html?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=dormitoryQuantity&amp;prefv2=2"/>
+                                                        <li 
+                                                            class="form-check mb-3 pl-0">
+                                                            <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=dormitoryQuantity&amp;prefv2=2"
+                                                                class="">
+
+                                                                
+                                                                        <input class="form-check-input d-none"
+                                                                            type="checkbox" value="" />
+                                                                
+                                                                <label class="custom-form-check-input">
+                                                                    <i
+                                                                        class="icon icon-check text-white font-size-xs"></i>
+                                                                </label>
+                                                                <span class="adjMobaSpan "
+                                                                aria-hidden="true">
+
+                                                                
+                                                                    2 Dormit&oacute;rios
+                                                                
+                                                                </span>
+                                                                <span class="sr-only selected-assistive-text">
+                                                                    
+                                                                    Refinar por N&uacute;mero de dormit&oacute;rios: 2
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    
+                                        
+                    
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <p class="letter-spacing">
+                                    Com garagem?
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-wrap">
+                                    <div class="refinements">
+                                        <div class="refinement">
+                                            <div class="col-sm-12">
+                                                <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0 noWrapFilters">
+                                                    
+                                                        <li 
+                                                            class="form-check mb-3 pl-0">
+                                                            <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=vacanciesQuantity&amp;prefv2=0"
+                                                                class="">
+
+                                                                
+                                                                        <input class="form-check-input d-none"
+                                                                            type="checkbox" value="" />
+                                                                
+                                                                <label class="custom-form-check-input">
+                                                                    <i
+                                                                        class="icon icon-check text-white font-size-xs"></i>
+                                                                </label>
+
+                                                                <span class="adjMobaSpan "
+                                                                aria-hidden="true">
+                                                                N&atilde;o
+                                                                </span>
+                                                                <span class="sr-only selected-assistive-text">
+                                                                    
+                                                                    Refinar por Garagem: 0
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    
+                    
+                    
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <p class="letter-spacing">
+                                    Com varanda?
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-wrap">
+                                    <div class="refinements">
+                                        <div class="refinement">
+                                            <div class="col-sm-12">
+                                                <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0 noWrapFilters" id="balconyOptions">
+                                                    
+                                                        <li 
+                                                            class="form-check mb-3 pl-0">
+                                                            <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=balcony&amp;prefv1=Sim&amp;prefn2=buildingStatus&amp;prefv2=Em%20constru%c3%a7%c3%a3o"
+                                                                class="">
+
+                                                                
+                                                                        <input class="form-check-input d-none"
+                                                                            type="checkbox" value="" />
+                                                                
+                                                                <label class="custom-form-check-input">
+                                                                    <i
+                                                                        class="icon icon-check text-white font-size-xs"></i>
+                                                                </label>
+
+                                                                <span class="adjMobaSpan "
+                                                                aria-hidden="true">
+                                                                Sim
+                                                                </span>
+                                                                <span class="sr-only selected-assistive-text">
+                                                                    
+                                                                    Refinar por Varanda: Sim
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    
+                                                        <li 
+                                                            class="form-check mb-3 pl-0">
+                                                            <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=balcony&amp;prefv1=N%c3%a3o&amp;prefn2=buildingStatus&amp;prefv2=Em%20constru%c3%a7%c3%a3o"
+                                                                class="">
+
+                                                                
+                                                                        <input class="form-check-input d-none"
+                                                                            type="checkbox" value="" />
+                                                                
+                                                                <label class="custom-form-check-input">
+                                                                    <i
+                                                                        class="icon icon-check text-white font-size-xs"></i>
+                                                                </label>
+
+                                                                <span class="adjMobaSpan "
+                                                                aria-hidden="true">
+                                                                N&atilde;o
+                                                                </span>
+                                                                <span class="sr-only selected-assistive-text">
+                                                                    
+                                                                    Refinar por Varanda: N&atilde;o
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    
+
+<div class="row mb-3 flex-wrap">
+    <div class="col-12">
+        <p>
+            Qual valor aproximado do ap&ecirc; que voc&ecirc; est&aacute; procurando?
+        </p>
+    </div>
+    <div class="col-12">
+        <div class="d-flex mb-4">
+            <div class="col">
+                <div class="input-group border rounded mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-transparent border-0 text-black-50 pr-1">
+                            Min.
+                        </span>
+                    </div>
+                    <input type="text" id="approximate-value-amount-min"
+                        class="form-control bg-transparent border-0 pl-0" readonly/>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group border rounded mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-transparent border-0 text-black-50 pr-1">
+                            Max.
+                        </span>
+                    </div>
+                    <input type="text" id="approximate-value-amount-max"
+                        class="form-control bg-transparent border-0 pl-0" readonly/>
+                </div>
+            </div>
+        </div>
+        <div id="slider-range-approximate-value" class="refine-price-element" data-url="Search-ShowAjax8da5.html?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o"
+            data-price-min="0" data-price-max="500000"
+            data-price-min-param="0" data-price-max-param="500000"></div>
+    </div>
+</div>
+<hr />
+
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <p class="letter-spacing js-checkedIncome" checked-income="">
+                Renda Familiar</p>
+        </div>
+        <div class="col-12">
+            <div class="d-flex flex-wrap">
+                <div class="refinements">
+                    <div class="refinement js-income">
+                        <div class="col-sm-12">
+                            <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0">
+                                
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=At%c3%a9%20R%24%201%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                At&eacute; R$ 1.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: At&eacute; R$ 1.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%201%2e500%20a%20R%24%201%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 1.500 a R$ 1.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 1.500 a R$ 1.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%202%2e000%20a%20R%24%202%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 2.000 a R$ 2.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 2.000 a R$ 2.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%202%2e500%20a%20R%24%202%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 2.500 a R$ 2.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 2.500 a R$ 2.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%203%2e000%20a%20R%24%203%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 3.000 a R$ 3.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 3.000 a R$ 3.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%203%2e500%20a%20R%24%203%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 3.500 a R$ 3.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 3.500 a R$ 3.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%204%2e000%20a%20R%24%204%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 4.000 a R$ 4.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 4.000 a R$ 4.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%204%2e500%20a%20R%24%204%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 4.500 a R$ 4.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 4.500 a R$ 4.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%205%2e000%20a%20R%24%205%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 5.000 a R$ 5.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 5.000 a R$ 5.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%205%2e500%20a%20R%24%205%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 5.500 a R$ 5.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 5.500 a R$ 5.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%206%2e000%20a%20R%24%206%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 6.000 a R$ 6.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 6.000 a R$ 6.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%206%2e500%20a%20R%24%206%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 6.500 a R$ 6.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 6.500 a R$ 6.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%207%2e000%20a%20R%24%207%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 7.000 a R$ 7.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 7.000 a R$ 7.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%207%2e500%20a%20R%24%207%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 7.500 a R$ 7.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 7.500 a R$ 7.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%208%2e000%20a%20R%24%208%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 8.000 a R$ 8.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 8.000 a R$ 8.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%208%2e500%20a%20R%24%208%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 8.500 a R$ 8.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 8.500 a R$ 8.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%209%2e000%20a%20R%24%209%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 9.000 a R$ 9.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 9.000 a R$ 9.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%209%2e500%20a%20R%24%209%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 9.500 a R$ 9.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 9.500 a R$ 9.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%2010%2e000%20a%20R%24%2011%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 10.000 a R$ 11.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 10.000 a R$ 11.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%2012%2e000%20a%20R%24%2013%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 12.000 a R$ 13.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 12.000 a R$ 13.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%2014%2e000%20a%20R%24%2015%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 14.000 a R$ 15.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 14.000 a R$ 15.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%2016%2e000%20a%20R%24%2017%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 16.000 a R$ 17.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 16.000 a R$ 17.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%2018%2e000%20a%20R%24%2019%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 18.000 a R$ 19.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 18.000 a R$ 19.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=incomeLimit&amp;prefv2=Acima%20de%20R%2420%2e000"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                Acima de R$20.000
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: Acima de R$20.000
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <p class="letter-spacing">Comodidade</p>
+        </div>
+        <div class="col-12">
+            <div class="d-flex flex-wrap">
+                <div class="refinements">
+                    <div class="refinement">
+                        <div class="col-sm-12">
+                            <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0">
+                                
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Atelier"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Atelier
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Atelier
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Biciclet%c3%a1rio"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Biciclet&aacute;rio
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Biciclet&aacute;rio
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Brinquedoteca"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Brinquedoteca
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Brinquedoteca
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Churrasqueira"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Churrasqueira
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Churrasqueira
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Coworking"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Coworking
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Coworking
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Fitness"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Fitness
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Fitness
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Fitness%20Externo"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Fitness Externo
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Fitness Externo
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Horta"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Horta
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Horta
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Mini%20Mercado"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Mini Mercado
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Mini Mercado
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Pet%20Care"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Pet Care
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Pet Care
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Playground"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Playground
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Playground
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Pomar"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Pomar
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Pomar
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Quadra%20de%20Areia"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Quadra de Areia
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Quadra de Areia
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Sal%c3%a3o%20de%20Festa%20Infantil"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Sal&atilde;o de Festa Infantil
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Sal&atilde;o de Festa Infantil
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=leisure&amp;prefv2=Sal%c3%a3o%20de%20Festas"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Sal&atilde;o de Festas
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Sal&atilde;o de Festas
+</span>
+</button>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr />
+
+
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <p class="letter-spacing">Mobilidade
+                (Dica: Escolha uma regi&atilde;o antes para um melhor resultado)</p>
+        </div>
+        <div class="col-12">
+            <div class="d-flex flex-wrap">
+                <div class="refinements">
+                    <div class="refinement">
+                        <div class="col-sm-12">
+                            <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0">
+                                
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Assa%c3%ad%20Barra%20Funda"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Assa&iacute; Barra Funda
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Assa&iacute; Barra Funda
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Big%20Pacaembu"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Big Pacaembu
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Big Pacaembu
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Carrefour%20Casa%20Verde"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Carrefour Casa Verde
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Carrefour Casa Verde
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Giga%20Atacado%20Barra%20Funda"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Giga Atacado Barra Funda
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Giga Atacado Barra Funda
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Parque%20Jardim%20das%20Perdizes"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Parque Jardim das Perdizes
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Parque Jardim das Perdizes
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Polo%20comercial%20R%2e%20Jos%c3%a9%20Paulino"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Polo comercial R. Jos&eacute; Paulino
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Polo comercial R. Jos&eacute; Paulino
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Pontos%20de%20%c3%b4nibus%20Av%2e%20Marques%20de%20S%c3%a3o%20Vicente"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Pontos de &ocirc;nibus Av. Marques de S&atilde;o Vicente
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Pontos de &ocirc;nibus Av. Marques de S&atilde;o Vicente
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Pontos%20de%20%c3%b4nibus%20Av%2e%20Marqu%c3%aas%20de%20S%c3%a3o%20Vicente"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Pontos de &ocirc;nibus Av. Marqu&ecirc;s de S&atilde;o Vicente
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Pontos de &ocirc;nibus Av. Marqu&ecirc;s de S&atilde;o Vicente
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Pt%2e%20de%20%c3%b4nibus%20Av%2e%20Rudge"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Pt. de &ocirc;nibus Av. Rudge
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Pt. de &ocirc;nibus Av. Rudge
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Pt%2e%20de%20%c3%b4nibus%20Rudge%20B%2fC"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Pt. de &ocirc;nibus Rudge B/C
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Pt. de &ocirc;nibus Rudge B/C
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Sam%e2%80%99s%20Club"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Sam&rsquo;s Club
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Sam&rsquo;s Club
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Sesc%20Bom%20Retiro"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Sesc Bom Retiro
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Sesc Bom Retiro
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Shopping%20Bourbon"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Shopping Bourbon
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Shopping Bourbon
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Teatro%20Porto"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Teatro Porto
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Teatro Porto
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Terminal%20Barra%20Funda"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Terminal Barra Funda
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Terminal Barra Funda
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Theatro%20S%c3%a3o%20Pedro"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Theatro S&atilde;o Pedro
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Theatro S&atilde;o Pedro
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=UBS%2fAMA%20Boraceia"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    UBS/AMA Boraceia
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: UBS/AMA Boraceia
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=UNIP%20Marques%20de%20S%c3%a3o%20Vicente"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    UNIP Marques de S&atilde;o Vicente
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: UNIP Marques de S&atilde;o Vicente
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=mobility&amp;prefv2=Walmart"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Walmart
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Walmart
+</span>
+</button>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="mb-5" />
+
+<div class="row align-items-center more-filters-action">
+    <div class="col">
+        <div class="secondary-bar col-12 offset-sm-4 offset-md-0 col-sm-4 col-md-12">
+            <button class="btn btn-link text-black-50 text-underline js-reset-search"
+                data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda">
+                Limpar
+            </button>
+        </div>
+    </div>
+    <div class="col">
+        <a href="#" data-dismiss="modal" class="btn btn-primary rounded-pill py-2 px-0 px-lg-4 wefound">
+            
+    
+        
+            <span class="result-count-label d-flex justify-content-center flex-column flex-md-row">
+                <span>Encontramos&nbsp;</span>
+                <span>3 ap&ecirc;s</span>
+            </span>
+        
+        
+    
+
+</a>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+            </form>
+        </div>
+    </div>
+    <div class="search-results">
+        <div class="row">
+            <div class="tab-content col-12">
+                <div class="tab-pane active" id="product-search-results" role="tabpanel" aria-labelledby="product-tab">
+                    <div class="row grid-header pt-4 pb-3">
+                        
+                            <div class="result-count col-6 col-md-auto">
+                                
+    
+        
+            <span class="result-count-label d-flex justify-content-center flex-column flex-md-row">
+                <span>Encontramos&nbsp;</span>
+                <span>3 ap&ecirc;s</span>
+            </span>
+        
+        
+    
+
+
+                            </div>
+                        
+                        
+                        
+                            <div class="col-6 col-md-auto ml-md-auto">
+                                
+    <div class="sort-order-group">
+        <span class="sort-order-label">Ordenar por:</span>
+        <select name="sort-order" class="custom-select border-0" aria-label="Ordenar por">
+            <option aria-label="Selecione">Selecione</option>
+            
+            
+                <option class="product-name-ascending" value="Search-UpdateGrid216b.html?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=product-name-ascending&amp;start=0&amp;sz=3"
+                    data-id="product-name-ascending"
+                    
+                >
+                    Ordenar : Nome A-Z
+                </option>
+            
+            
+            
+                <option class="product-name-descending" value="Search-UpdateGridcf39.html?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=product-name-descending&amp;start=0&amp;sz=3"
+                    data-id="product-name-descending"
+                    
+                >
+                    Ordenar : Nome Z-A
+                </option>
+            
+            
+            
+                <option class="price-high-to-low" value="Search-UpdateGrid745c.html?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=price-high-to-low&amp;start=0&amp;sz=3"
+                    data-id="price-high-to-low"
+                    
+                >
+                    Ordenar : Pre&ccedil;o Asc.
+                </option>
+            
+            
+            
+                <option class="price-low-to-high" value="Search-UpdateGrid4147.html?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=price-low-to-high&amp;start=0&amp;sz=3"
+                    data-id="price-low-to-high"
+                    
+                >
+                    Ordenar : Pre&ccedil;o Desc.
+                </option>
+            
+            
+            
+                <option class="product-relevance" value="Search-UpdateGrid47bf.html?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=product-relevance&amp;start=0&amp;sz=3"
+                    data-id="product-relevance"
+                    
+                >
+                    Ordenar : Relev&acirc;ncia
+                </option>
+            
+            
+            
+                <option class="meter-price-low-to-high" value="Search-UpdateGridc058.html?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=meter-price-low-to-high&amp;start=0&amp;sz=3"
+                    data-id="meter-price-low-to-high"
+                    
+                >
+                    Ordenar : Valor por M&sup2;
+                </option>
+            
+            
+            
+            
+            
+                <option class="price-highest-low-to-low" value="Search-UpdateGrid9f0a.html?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=price-highest-low-to-low&amp;start=0&amp;sz=3"
+                    data-id="price-highest-low-to-low"
+                    
+                >
+                    Ordenar : Maior Pre&ccedil;o
+                </option>
+            
+            
+        </select>
+    </div>
+
+
+                            </div>
+                            
+                        
+                    </div>
+
+                    
+                        
+                        <div class="row">
+                            
+                            <div class="col-sm-12 col-md-12">
+                                
+                                <div class="row filter-bar d-none">
+                                    <ul>
+    
+        
+            <li class="filter-value">
+                <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=barra-funda" class="btn text-left">
+                    <span aria-hidden="true">Em constru&ccedil;&atilde;o</span>
+                    <span class="sr-only">
+                        Remover filtro Atualmente refinado por Status da Obra: Em constru&ccedil;&atilde;obutton.close=Fechar
+                    </span>
+                </button>
+            </li>
+        
+    
+</ul>
+
+                                </div>
+                                
+                                <div class="row product-grid" itemtype="http://schema.org/SomeProducts"
+                                    itemid="#product">
+                                    
+    <div class="col-12 col-md-6 col-lg-3 mb-4 productTileWrapper compareCheck">
+        <!-- CQuotient Activity Tracking (viewCategory-cquotient.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+(function(){
+try {
+    if(window.CQuotient) {
+	var cq_params = {};
+	
+	cq_params.cookieId = window.CQuotient.getCQCookieId();
+	cq_params.userId = window.CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.accumulate = true;
+	cq_params.products = [{
+	    id: 'a0K4v00000dK7OzEAK',
+	    sku: ''
+	}];
+	cq_params.categoryId = 'barra-funda';
+	cq_params.refinements = '[{\"name\":\"buildingStatus\",\"value\":\"Em constru\u00E7\u00E3o\"},{\"name\":\"Category\",\"value\":\"barra-funda\"}]';
+	cq_params.personalized = 'false';
+	cq_params.sortingRule = '__UNDEFINED__';
+	cq_params.imageUUID = '__UNDEFINED__';
+	cq_params.realm = "BJDB";
+	cq_params.siteId = "plano";
+	cq_params.instanceType = "prd";
+	cq_params.queryLocale = "default";
+	cq_params.locale = window.CQuotient.locale;
+	
+	if(window.CQuotient.sendActivity)
+	    window.CQuotient.sendActivity(CQuotient.clientId, 'viewCategory', cq_params);
+	else
+	    window.CQuotient.activities.push({
+	    	activityType: 'viewCategory',
+	    	parameters: cq_params
+	    });
+  }
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewCategoryProduct-active_data.js) */
+(function(){
+try {
+	if (dw.ac) {
+		var search_params = {};
+		search_params.persd = 'false';
+		search_params.refs = '[{\"name\":\"buildingStatus\",\"value\":\"Em constru\u00E7\u00E3o\"},{\"name\":\"Category\",\"value\":\"barra-funda\"}]';
+		search_params.sort = '';
+		search_params.imageUUID = '';
+		search_params.searchID = '255b1af8-754b-4919-90bc-73ddca7f8e81';
+		search_params.locale = 'default';
+		search_params.queryLocale = 'default';
+		search_params.showProducts = 'true';
+		dw.ac.applyContext({category: "barra-funda", searchData: search_params});
+		if (typeof dw.ac._scheduleDataSubmission === "function") {
+			dw.ac._scheduleDataSubmission();
+		}
+	}
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewProduct-active_data.js) */
+dw.ac._capture({id: "a0K4v00000dK7OzEAK", type: "searchhit"});
+/* ]]> */
+// -->
+</script>
+            
+
+<div class="product" data-pid="a0K4v00000dK7OzEAK">
+    <div class="product-tile">
+    <!-- dwMarker="product" dwContentID="0138d4b6e079ffe8b53cc7d611" -->
+    <div class="image-container">
+        <article class="card card-enterprise rounded-0 border-0 my-0" id="a0K4v00000dK7OzEAK">
+            <div id="pdpCarousel-a0K4v00000dK7OzEAK" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner product-tile-img-container" style="overflow:visible;">
+        
+            
+            <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-perdizes.html">
+        
+
+
+            
+                <div class='carousel-item active'>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/02/14/16/12/c4986577a1966f20f17df1dce8ad4ee4335b2088-thumbnail.jpg" class="w-100" alt="Fachada - Perspectiva Ilustrada image number 0"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/07/6cb372227e7ea4a9395fd4315d58db3b84fae104-thumbnail.jpg" class="w-100" alt="Mini quadra de areia - Perspectiva Ilustrada image number 1"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/07/c12bfbcfde93382f2965da5e2f250255a0ebda5d-thumbnail.jpg" class="w-100" alt="Churrasqueira - Perspectiva Ilustrada image number 2"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/07/aa68c05ccdd866baf6cffcea9276ae57c4755b40-thumbnail.jpg" class="w-100" alt="Feirinha - Perspectiva Ilustrada (As &aacute;reas que s&atilde;o entregues equipadas constam expressamente no Memorial Descritivo. A &aacute;rea ilustrada &eacute; uma sugest&atilde;o de uso e depende de contrata&ccedil;&atilde;o do servi&ccedil;o/infraestrutura/decora&ccedil;&atilde;o pelo condom&iacute;nio)  image number 3"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/07/7194aa02c39cf3bed042127ae97b2f1257f808a9-thumbnail.jpg" class="w-100" alt="Brinquedoteca - Perspectiva Ilustrada image number 4"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/07/9dc813cbf416150675ad4fd064f96ebc88d3c3d3-thumbnail.jpg" class="w-100" alt="Mercadinho - Perspectiva Ilustrada (As &aacute;reas que s&atilde;o entregues equipadas constam expressamente no Memorial Descritivo. A &aacute;rea ilustrada &eacute; uma sugest&atilde;o de uso e depende de contrata&ccedil;&atilde;o do servi&ccedil;o/infraestrutura/decora&ccedil;&atilde;o pelo condom&iacute;nio)  image number 5"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/07/671821dd765fd96f14a28ed47cebd00993430f61-thumbnail.jpg" class="w-100" alt="Living (1 dorm.) - Perspectiva Ilustrada image number 6"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/07/18da38431d6ca3c6815e024718bd4a5210cbcf62-thumbnail.jpg" class="w-100" alt="Sal&atilde;o de festas infantil - Perspectiva Ilustrada image number 7"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/07/fed85d1fa46c0770e0623cd70f7ed0d8fe30f868-thumbnail.jpg" class="w-100" alt="Sal&atilde;o de festas adulto - Perspectiva Ilustrada image number 8"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/07/d3ddc870ebaf9e56bfa3ca8cb23ca18d33c7409e-thumbnail.jpg" class="w-100" alt="Pet care - Perspectiva Ilustrada image number 9"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/07/2c3339ba71ab3ebbe2dda80c6bbc7752edd80181-thumbnail.jpg" class="w-100" alt="Sal&atilde;o de jogos - Perspectiva Ilustrada image number 10"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/10/9689558e3bd2c23c8dea6d066f67d90710e4403b-thumbnail.jpg" class="w-100" alt="Fitness - Perspectiva Ilustrada image number 11"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/07/ceb466ae3097121d148d257551276c32b873aa28-thumbnail.jpg" class="w-100" alt="Playground - Perspectiva Ilustrada image number 12"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/11/11/1a028d307b43abac65d4380d47bfa2309eadfa30-thumbnail.jpg" class="w-100" alt="Living - 33,92m&sup2; image number 13"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/11/11/1b38e95dde03cbcf45c6b4787cb32d18394a2a6c-thumbnail.jpg" class="w-100" alt="Living e cozinha - 33,92m&sup2; image number 14"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/11/11/81610598168362fff284d962976da9e53255e5b8-thumbnail.jpg" class="w-100" alt="Cozinha - 33,92m&sup2; image number 15"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/11/11/271282fdd465f5a32a89438eec40d9a33e848960-thumbnail.jpg" class="w-100" alt="Dormit&oacute;rio II - 33,92m&sup2; image number 16"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/11/11/32ad13f2ffa6a4f8fb344b1d4bc2250f54c0dbb9-thumbnail.jpg" class="w-100" alt="Banho - 33,92m&sup2; image number 17"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/11/11/d3ec1fc9678c8de7ba3984a79a156b0d7f3e3b87-thumbnail.jpg" class="w-100" alt="Banho - 33,92m&sup2; image number 18"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/11/11/3c5f3eb8a6256922ea29ca116330994bcbc5dcaf-thumbnail.jpg" class="w-100" alt="Dormit&oacute;rio I - 33,92m&sup2; image number 19"
+                        itemprop="image" />
+                </div>
+            
+        </a>
+    </div>
+    
+        <button class="carousel-control-prev" type="button" data-target=" #pdpCarousel-a0K4v00000dK7OzEAK"
+            data-slide="prev">
+            <i class="icon icon-left text-white"></i>
+            <span class="sr-only">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target=" #pdpCarousel-a0K4v00000dK7OzEAK"
+            data-slide="next">
+            <i class="icon icon-right text-white"></i>
+            <span class="sr-only">Pr&oacute;ximo</span>
+        </button>
+    
+    
+    
+
+    <button
+    class="wishlist-link-pdp wishlistTile wishlist-button-pdp "
+    data-href="/on/demandware.store/Sites-plano-Site/default/Wishlist-AddProduct">
+    <i class="fa fa-heart-o disabled"></i>
+</button>
+<button
+    class="wishlistTileRemove remove-from-wish-list wishlist-button-pdp d-none"
+    data-href="/on/demandware.store/Sites-plano-Site/default/Wishlist-RemoveProduct?pid=a0K4v00000dK7OzEAK">
+    <i class="fa fa-heart"></i>
+</button>
+        
+</div>
+            <div class="card-body px-0">
+                <h3 class="card-enterprise--name">
+    
+        
+        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-perdizes.html">MAPP Barra Funda - Perdizes</a>
+    
+
+</h3>
+<p class="card-enterprise--city d-flex justify-content-start">
+    <i class="icon icon-pin font-size-md mx-2"></i>
+
+    
+        
+        <a class="card-enterprise--district" href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-perdizes.html">Barra Funda - S&atilde;o Paulo</a>
+    
+</p>
+
+                <ul class="product-tile-spec-list">
+    <li class="font-size-sm d-flex align-items-center pr-3 domitory-number">
+         <i class="icon icon-dorms font-size-lg mr-2"></i>
+                1 e 2 Dorms. </iselseif>
+        
+    </li>
+    <li class="font-size-sm d-flex align-items-center building-status">
+         <i
+                    class="icon font-size-xl mr-2 icon-em-construcao"></i> </iselseif>
+            
+        Em constru&ccedil;&atilde;o
+    </li>
+</ul>
+
+                <div class="vertical carousel carousel-fade slide d-none" data-ride="carousel" data-interval="2000">
+    <div class="carousel-inner badge badge-pill badge-custom-light badge-options w-100 my-2">
+        
+    </div>
+</div>
+                <p class="card-enterprise--price mb-0">
+                    
+                        
+                        <span class="first-line">A partir de:</span>
+                    
+
+                
+                    
+    <div class="price">
+        <span class="range">
+    
+
+    
+    
+    <span>
+    
+
+    
+<p class="card-enterprise--price mb-0">
+    
+    <span class="sales">
+        
+            <span class="second-line" content="225751.18">
+        
+        
+        
+        R$225.751,18
+
+
+        <sup class="text-success font-size-sm d-none">(-10%)</sup></span>
+    </span>
+</p>
+</span>
+
+
+</span>
+
+    </div>
+
+                
+                <p class="card-enterprise--price">
+                
+                </p>
+                
+                    
+                    <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-perdizes.html" title="Quero Conhecer" class="btn btn-primary btn-block rounded-pill py-3">Quero Conhecer</a>
+                
+                <label class="justify-content-center d-flex compareLabel">
+                    <span class="text-underline">Compare este produto</span>
+                    <input type="checkbox" class="invisible disChecked" name="compare" data-enterprise-id="001" data-product-id="a0K4v00000dK7OzEAK"/>
+                    <span class="btn btn-success rounded-circle card-button-selected p-0"><i class="icon icon-check text-white"></i></span>
+                </label>
+            </div>
+        </article>
+    </div>
+    <!-- END_dwmarker -->
+</div>
+
+</div>
+
+        
+    </div>
+    
+
+    <div class="col-12 col-md-6 col-lg-3 mb-4 productTileWrapper compareCheck">
+        <!-- CQuotient Activity Tracking (viewCategory-cquotient.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+(function(){
+try {
+    if(window.CQuotient) {
+	var cq_params = {};
+	
+	cq_params.cookieId = window.CQuotient.getCQCookieId();
+	cq_params.userId = window.CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.accumulate = true;
+	cq_params.products = [{
+	    id: 'a0K4v00000dfRKjEAM',
+	    sku: ''
+	}];
+	cq_params.categoryId = 'barra-funda';
+	cq_params.refinements = '[{\"name\":\"buildingStatus\",\"value\":\"Em constru\u00E7\u00E3o\"},{\"name\":\"Category\",\"value\":\"barra-funda\"}]';
+	cq_params.personalized = 'false';
+	cq_params.sortingRule = '__UNDEFINED__';
+	cq_params.imageUUID = '__UNDEFINED__';
+	cq_params.realm = "BJDB";
+	cq_params.siteId = "plano";
+	cq_params.instanceType = "prd";
+	cq_params.queryLocale = "default";
+	cq_params.locale = window.CQuotient.locale;
+	
+	if(window.CQuotient.sendActivity)
+	    window.CQuotient.sendActivity(CQuotient.clientId, 'viewCategory', cq_params);
+	else
+	    window.CQuotient.activities.push({
+	    	activityType: 'viewCategory',
+	    	parameters: cq_params
+	    });
+  }
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewCategoryProduct-active_data.js) */
+(function(){
+try {
+	if (dw.ac) {
+		var search_params = {};
+		search_params.persd = 'false';
+		search_params.refs = '[{\"name\":\"buildingStatus\",\"value\":\"Em constru\u00E7\u00E3o\"},{\"name\":\"Category\",\"value\":\"barra-funda\"}]';
+		search_params.sort = '';
+		search_params.imageUUID = '';
+		search_params.searchID = '255b1af8-754b-4919-90bc-73ddca7f8e81';
+		search_params.locale = 'default';
+		search_params.queryLocale = 'default';
+		search_params.showProducts = 'true';
+		dw.ac.applyContext({category: "barra-funda", searchData: search_params});
+		if (typeof dw.ac._scheduleDataSubmission === "function") {
+			dw.ac._scheduleDataSubmission();
+		}
+	}
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewProduct-active_data.js) */
+dw.ac._capture({id: "a0K4v00000dfRKjEAM", type: "searchhit"});
+/* ]]> */
+// -->
+</script>
+            
+
+<div class="product" data-pid="a0K4v00000dfRKjEAM">
+    <div class="product-tile">
+    <!-- dwMarker="product" dwContentID="af889e184e183fc2dc77d3a2a7" -->
+    <div class="image-container">
+        <article class="card card-enterprise rounded-0 border-0 my-0" id="a0K4v00000dfRKjEAM">
+            <div id="pdpCarousel-a0K4v00000dfRKjEAM" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner product-tile-img-container" style="overflow:visible;">
+        
+            
+            <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/portal-barra-funda-vila-rio-branco.html">
+        
+
+
+            
+                <div class='carousel-item active'>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/05/31/14/23/74b2ed7f590eab1cba9ff5fc5801946914e8ab68-thumbnail.jpg" class="w-100" alt="Portaria - Perspectiva Ilustrada image number 0"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/05/31/14/23/e24fa73ca5eb14f3f9b1337fa94a1879c4658752-thumbnail.jpg" class="w-100" alt="Living - Torre A - Perspectiva Ilustrada image number 1"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/05/31/14/23/210aceac5dc0ab83934afe92ba5c1f72e2b0d709-thumbnail.jpg" class="w-100" alt="Biciclet&aacute;rio - Perspectiva Ilustrada image number 2"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/05/31/14/23/7840d348cfebec7b11ae64ad6fd2a06f8fb9030d-thumbnail.jpg" class="w-100" alt="Churrasqueira - Perspectiva Ilustrada image number 3"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/05/31/14/23/213bfc07c2ea1efa249010491a15fc6b18453070-thumbnail.jpg" class="w-100" alt="Fitness - Perspectiva Ilustrada image number 4"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/05/31/14/23/89c2c26bb955178c91fa78084e2857fb87fc0d82-thumbnail.jpg" class="w-100" alt="Playground - Perspectiva Ilustrada image number 5"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/05/31/14/28/80e4cdf7a481078647cce51a44a78a06e0f5072b-thumbnail.jpg" class="w-100" alt="Sal&atilde;o de festas - Perspectiva Ilustrada image number 6"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/05/31/14/23/e370825b90797409bca50a6b55ce83c87f2520f2-thumbnail.jpg" class="w-100" alt="Living - Torre B - Perspectiva Ilustrada image number 7"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/05/31/14/23/58d85980e7e01b46a28612b9a7bf7eb278415835-thumbnail.jpg" class="w-100" alt="Fitness - Perspectiva Ilustrada image number 8"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/05/31/14/23/2275caee326e6b81b8a59596d488a2b9725ec007-thumbnail.jpg" class="w-100" alt="Brinquedoteca - Perspectiva Ilustrada image number 9"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/05/31/14/23/b16da955c3baed53ce9f587c4e7f891382257e09-thumbnail.jpg" class="w-100" alt="Petcare - Perspectiva Ilustrada image number 10"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/05/31/14/23/786db5f2fc2e8fa73d8ac7d7c6858d81e9845f69-thumbnail.jpg" class="w-100" alt="Voo geral - Perspectiva Ilustrada image number 11"
+                        itemprop="image" />
+                </div>
+            
+        </a>
+    </div>
+    
+        <button class="carousel-control-prev" type="button" data-target=" #pdpCarousel-a0K4v00000dfRKjEAM"
+            data-slide="prev">
+            <i class="icon icon-left text-white"></i>
+            <span class="sr-only">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target=" #pdpCarousel-a0K4v00000dfRKjEAM"
+            data-slide="next">
+            <i class="icon icon-right text-white"></i>
+            <span class="sr-only">Pr&oacute;ximo</span>
+        </button>
+    
+    
+    
+
+    <button
+    class="wishlist-link-pdp wishlistTile wishlist-button-pdp "
+    data-href="/on/demandware.store/Sites-plano-Site/default/Wishlist-AddProduct">
+    <i class="fa fa-heart-o disabled"></i>
+</button>
+<button
+    class="wishlistTileRemove remove-from-wish-list wishlist-button-pdp d-none"
+    data-href="/on/demandware.store/Sites-plano-Site/default/Wishlist-RemoveProduct?pid=a0K4v00000dfRKjEAM">
+    <i class="fa fa-heart"></i>
+</button>
+        
+</div>
+            <div class="card-body px-0">
+                <h3 class="card-enterprise--name">
+    
+        
+        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/portal-barra-funda-vila-rio-branco.html">Portal Barra Funda - Vila Rio Branco</a>
+    
+
+</h3>
+<p class="card-enterprise--city d-flex justify-content-start">
+    <i class="icon icon-pin font-size-md mx-2"></i>
+
+    
+        
+        <a class="card-enterprise--district" href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/portal-barra-funda-vila-rio-branco.html">Barra Funda - S&atilde;o Paulo</a>
+    
+</p>
+
+                <ul class="product-tile-spec-list">
+    <li class="font-size-sm d-flex align-items-center pr-3 domitory-number">
+         <i class="icon icon-dorms font-size-lg mr-2"></i>
+                1 e 2 Dorms. </iselseif>
+        
+    </li>
+    <li class="font-size-sm d-flex align-items-center building-status">
+         <i
+                    class="icon font-size-xl mr-2 icon-em-construcao"></i> </iselseif>
+            
+        Em constru&ccedil;&atilde;o
+    </li>
+</ul>
+
+                <div class="vertical carousel carousel-fade slide d-none" data-ride="carousel" data-interval="2000">
+    <div class="carousel-inner badge badge-pill badge-custom-light badge-options w-100 my-2">
+        
+    </div>
+</div>
+                <p class="card-enterprise--price mb-0">
+                    
+                        
+                        <span class="first-line">A partir de:</span>
+                    
+
+                
+                    
+    <div class="price">
+        <span class="range">
+    
+
+    
+    
+    <span>
+    
+
+    
+<p class="card-enterprise--price mb-0">
+    
+    <span class="sales">
+        
+            <span class="second-line" content="221450.00">
+        
+        
+        
+        R$221.450,00
+
+
+        <sup class="text-success font-size-sm d-none">(-10%)</sup></span>
+    </span>
+</p>
+</span>
+
+
+</span>
+
+    </div>
+
+                
+                <p class="card-enterprise--price">
+                
+                </p>
+                
+                    
+                    <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/portal-barra-funda-vila-rio-branco.html" title="Quero Conhecer" class="btn btn-primary btn-block rounded-pill py-3">Quero Conhecer</a>
+                
+                <label class="justify-content-center d-flex compareLabel">
+                    <span class="text-underline">Compare este produto</span>
+                    <input type="checkbox" class="invisible disChecked" name="compare" data-enterprise-id="001" data-product-id="a0K4v00000dfRKjEAM"/>
+                    <span class="btn btn-success rounded-circle card-button-selected p-0"><i class="icon icon-check text-white"></i></span>
+                </label>
+            </div>
+        </article>
+    </div>
+    <!-- END_dwmarker -->
+</div>
+
+</div>
+
+        
+    </div>
+    
+
+    <div class="col-12 col-md-6 col-lg-3 mb-4 productTileWrapper compareCheck">
+        <!-- CQuotient Activity Tracking (viewCategory-cquotient.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+(function(){
+try {
+    if(window.CQuotient) {
+	var cq_params = {};
+	
+	cq_params.cookieId = window.CQuotient.getCQCookieId();
+	cq_params.userId = window.CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.accumulate = true;
+	cq_params.products = [{
+	    id: 'a0K4v00000dK7P0EAK',
+	    sku: ''
+	}];
+	cq_params.categoryId = 'barra-funda';
+	cq_params.refinements = '[{\"name\":\"buildingStatus\",\"value\":\"Em constru\u00E7\u00E3o\"},{\"name\":\"Category\",\"value\":\"barra-funda\"}]';
+	cq_params.personalized = 'false';
+	cq_params.sortingRule = '__UNDEFINED__';
+	cq_params.imageUUID = '__UNDEFINED__';
+	cq_params.realm = "BJDB";
+	cq_params.siteId = "plano";
+	cq_params.instanceType = "prd";
+	cq_params.queryLocale = "default";
+	cq_params.locale = window.CQuotient.locale;
+	
+	if(window.CQuotient.sendActivity)
+	    window.CQuotient.sendActivity(CQuotient.clientId, 'viewCategory', cq_params);
+	else
+	    window.CQuotient.activities.push({
+	    	activityType: 'viewCategory',
+	    	parameters: cq_params
+	    });
+  }
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewCategoryProduct-active_data.js) */
+(function(){
+try {
+	if (dw.ac) {
+		var search_params = {};
+		search_params.persd = 'false';
+		search_params.refs = '[{\"name\":\"buildingStatus\",\"value\":\"Em constru\u00E7\u00E3o\"},{\"name\":\"Category\",\"value\":\"barra-funda\"}]';
+		search_params.sort = '';
+		search_params.imageUUID = '';
+		search_params.searchID = '255b1af8-754b-4919-90bc-73ddca7f8e81';
+		search_params.locale = 'default';
+		search_params.queryLocale = 'default';
+		search_params.showProducts = 'true';
+		dw.ac.applyContext({category: "barra-funda", searchData: search_params});
+		if (typeof dw.ac._scheduleDataSubmission === "function") {
+			dw.ac._scheduleDataSubmission();
+		}
+	}
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewProduct-active_data.js) */
+dw.ac._capture({id: "a0K4v00000dK7P0EAK", type: "searchhit"});
+/* ]]> */
+// -->
+</script>
+            
+
+<div class="product" data-pid="a0K4v00000dK7P0EAK">
+    <div class="product-tile">
+    <!-- dwMarker="product" dwContentID="82d581080fa2961b0aee87bf86" -->
+    <div class="image-container">
+        <article class="card card-enterprise rounded-0 border-0 my-0" id="a0K4v00000dK7P0EAK">
+            <div id="pdpCarousel-a0K4v00000dK7P0EAK" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner product-tile-img-container" style="overflow:visible;">
+        
+            
+            <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-agua-branca.html">
+        
+
+
+            
+                <div class='carousel-item active'>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/47/f68f511a6b936cf6b6fcf2d751725d160bc3525f-thumbnail.jpg" class="w-100" alt="Fachada - Perspectiva Ilustrada image number 0"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/47/8b4277189a0bd8ac3cbc4359465d4f3a3d4036d9-thumbnail.jpg" class="w-100" alt="Atelier - Perspectiva Ilustrada image number 1"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/47/dae8e994a190cc2bbee54643652a7a13c49aca41-thumbnail.jpg" class="w-100" alt="Coworking - Perspectiva Ilustrada image number 2"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/47/10ed4d1859067fe1f1d76367d2a5c89eb82e8ece-thumbnail.jpg" class="w-100" alt="Playground - Perspectiva Ilustrada image number 3"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/13/14/47/7b3975c934dbf43d3abc37b7509aefa5f6187477-thumbnail.jpg" class="w-100" alt="Feirinha - Perspectiva Ilustrada (As &aacute;reas que s&atilde;o entregues equipadas constam expressamente no Memorial Descritivo. A &aacute;rea ilustrada &eacute; uma sugest&atilde;o de uso e depende de contrata&ccedil;&atilde;o do servi&ccedil;o/infraestrutura/decora&ccedil;&atilde;o pelo condom&iacute;nio)  image number 4"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/02/15/10/09/911eace6538b4e4543061b48c06d9bd349cf7836-thumbnail.jpg" class="w-100" alt="Quadra de areia - Perspectiva Ilustrada image number 5"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/02/15/10/12/c79728c645a0232a736c02048983971f1c7db268-thumbnail.jpg" class="w-100" alt="Churrasqueira - Perspectiva Ilustrada image number 6"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/03/21/09/29/e382f253d333b05613807069e55a27548a70a6cd-thumbnail.jpg" class="w-100" alt="Living (1 dorm.) - Perspectiva Ilustrada image number 7"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/16/22/a511fdfc605a2f1c94da1e7d1a7e42b54a95fca6-thumbnail.jpg" class="w-100" alt="Living - 33,92m&sup2; image number 8"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/16/22/155d6185310aad5acedae808c3ba4cdae3dfe8f5-thumbnail.jpg" class="w-100" alt="Living e cozinha - 33,92m&sup2; image number 9"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/16/22/11174b8d3269fb69f883602ae86660d6c4ae57cf-thumbnail.jpg" class="w-100" alt="Cozinha - 33,92m&sup2; image number 10"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/16/22/0b45844992c24c2ef2307e0f9debe37e9240c0a2-thumbnail.jpg" class="w-100" alt="Dormit&oacute;rio II - 33,92m&sup2; image number 11"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/16/22/a035aa148e7d4713c293244c6bd9b35ad80fc900-thumbnail.jpg" class="w-100" alt="Banho - 33,92m&sup2; image number 12"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/16/22/99fcfce55b5af22dadc3d5cbdcca6cd97e593b69-thumbnail.jpg" class="w-100" alt="Banho - 33,92m&sup2; image number 13"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/01/30/16/22/defa17183a8d16f7ab587d29639c0312c3d845a3-thumbnail.jpg" class="w-100" alt="Dormit&oacute;rio I - 33,92m&sup2; image number 14"
+                        itemprop="image" />
+                </div>
+            
+        </a>
+    </div>
+    
+        <button class="carousel-control-prev" type="button" data-target=" #pdpCarousel-a0K4v00000dK7P0EAK"
+            data-slide="prev">
+            <i class="icon icon-left text-white"></i>
+            <span class="sr-only">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target=" #pdpCarousel-a0K4v00000dK7P0EAK"
+            data-slide="next">
+            <i class="icon icon-right text-white"></i>
+            <span class="sr-only">Pr&oacute;ximo</span>
+        </button>
+    
+    
+    
+
+    <button
+    class="wishlist-link-pdp wishlistTile wishlist-button-pdp "
+    data-href="/on/demandware.store/Sites-plano-Site/default/Wishlist-AddProduct">
+    <i class="fa fa-heart-o disabled"></i>
+</button>
+<button
+    class="wishlistTileRemove remove-from-wish-list wishlist-button-pdp d-none"
+    data-href="/on/demandware.store/Sites-plano-Site/default/Wishlist-RemoveProduct?pid=a0K4v00000dK7P0EAK">
+    <i class="fa fa-heart"></i>
+</button>
+        
+</div>
+            <div class="card-body px-0">
+                <h3 class="card-enterprise--name">
+    
+        
+        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-agua-branca.html">MAPP Barra Funda - &Aacute;gua Branca</a>
+    
+
+</h3>
+<p class="card-enterprise--city d-flex justify-content-start">
+    <i class="icon icon-pin font-size-md mx-2"></i>
+
+    
+        
+        <a class="card-enterprise--district" href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-agua-branca.html">Barra Funda - S&atilde;o Paulo</a>
+    
+</p>
+
+                <ul class="product-tile-spec-list">
+    <li class="font-size-sm d-flex align-items-center pr-3 domitory-number">
+         <i class="icon icon-dorms font-size-lg mr-2"></i>
+                1 e 2 Dorms. </iselseif>
+        
+    </li>
+    <li class="font-size-sm d-flex align-items-center building-status">
+         <i
+                    class="icon font-size-xl mr-2 icon-em-construcao"></i> </iselseif>
+            
+        Em constru&ccedil;&atilde;o
+    </li>
+</ul>
+
+                <div class="vertical carousel carousel-fade slide d-none" data-ride="carousel" data-interval="2000">
+    <div class="carousel-inner badge badge-pill badge-custom-light badge-options w-100 my-2">
+        
+    </div>
+</div>
+                <p class="card-enterprise--price mb-0">
+                    
+                        
+                        <span class="first-line">A partir de:</span>
+                    
+
+                
+                    
+    <div class="price">
+        <span class="range">
+    
+
+    
+    
+    <span>
+    
+
+    
+<p class="card-enterprise--price mb-0">
+    
+    <span class="sales">
+        
+            <span class="second-line" content="229443.99">
+        
+        
+        
+        R$229.443,99
+
+
+        <sup class="text-success font-size-sm d-none">(-10%)</sup></span>
+    </span>
+</p>
+</span>
+
+
+</span>
+
+    </div>
+
+                
+                <p class="card-enterprise--price">
+                
+                </p>
+                
+                    
+                    <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-agua-branca.html" title="Quero Conhecer" class="btn btn-primary btn-block rounded-pill py-3">Quero Conhecer</a>
+                
+                <label class="justify-content-center d-flex compareLabel">
+                    <span class="text-underline">Compare este produto</span>
+                    <input type="checkbox" class="invisible disChecked" name="compare" data-enterprise-id="001" data-product-id="a0K4v00000dK7P0EAK"/>
+                    <span class="btn btn-success rounded-circle card-button-selected p-0"><i class="icon icon-check text-white"></i></span>
+                </label>
+            </div>
+        </article>
+    </div>
+    <!-- END_dwmarker -->
+</div>
+
+</div>
+
+        
+    </div>
+    
+        <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex h-100 productTileWrapper justify-content-center">
+            
+            <a href="https://www.apegratis.com.br/?utm_source=click&amp;utm_medium=siteclick&amp;utm_content=game&amp;utm_campaign=siteclick" target="_blank" class="banner-simulate" title="Simula&ccedil;&atilde;o financeira totalmente gr&aacute;tis">
+                <picture>
+                    <source srcset="/on/demandware.static/-/Sites-plano-Library/default/v1722261323751/banner-simulador.png" media="(min-width: 768px)"/>
+                    <img src="../../../demandware.static/-/Sites-plano-Library/default/v1722261323751/banner-simulador-mobile.png"
+                    alt="Simula&ccedil;&atilde;o financeira totalmente gr&aacute;tis" />
+                </picture>
+            </a>
+        </div>
+    
+
+
+<div class="col-12 grid-footer"
+     data-sort-options="{&quot;options&quot;:[{&quot;displayName&quot;:&quot;Ordenar : Nome A-Z&quot;,&quot;id&quot;:&quot;product-name-ascending&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=product-name-ascending&amp;start=0&amp;sz=3&quot;},{&quot;displayName&quot;:&quot;Ordenar : Nome Z-A&quot;,&quot;id&quot;:&quot;product-name-descending&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=product-name-descending&amp;start=0&amp;sz=3&quot;},{&quot;displayName&quot;:&quot;Ordenar : Pre&ccedil;o Asc.&quot;,&quot;id&quot;:&quot;price-high-to-low&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=price-high-to-low&amp;start=0&amp;sz=3&quot;},{&quot;displayName&quot;:&quot;Ordenar : Pre&ccedil;o Desc.&quot;,&quot;id&quot;:&quot;price-low-to-high&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=price-low-to-high&amp;start=0&amp;sz=3&quot;},{&quot;displayName&quot;:&quot;Ordenar : Relev&acirc;ncia&quot;,&quot;id&quot;:&quot;product-relevance&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=product-relevance&amp;start=0&amp;sz=3&quot;},{&quot;displayName&quot;:&quot;Ordenar : Valor por M&sup2;&quot;,&quot;id&quot;:&quot;meter-price-low-to-high&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=meter-price-low-to-high&amp;start=0&amp;sz=3&quot;},{&quot;displayName&quot;:&quot;Ordenar : Desconto&quot;,&quot;id&quot;:&quot;product-active-discount&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=product-active-discount&amp;start=0&amp;sz=3&quot;},{&quot;displayName&quot;:&quot;Ordenar : Maior Pre&ccedil;o&quot;,&quot;id&quot;:&quot;price-highest-low-to-low&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=barra-funda&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;srule=price-highest-low-to-low&amp;start=0&amp;sz=3&quot;}],&quot;ruleId&quot;:null}"
+     data-page-size="7.0"
+     data-page-number="0"
+>
+    
+    
+
+    
+
+    <input type="hidden" class="permalink" value="../../../../imoveis/sao-paulo-zona-norte/barra-funda729a.html?prefn1=buildingStatus&amp;prefv1=Em%20constru%C3%A7%C3%A3o&amp;start=0&amp;sz=7" />
+    
+        <input type="hidden" class="category-id" value="barra-funda" />
+    
+</div>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                </div>
+                
+                <div class="tab-pane container" id="content-search-results-pane" role="tabpanel"
+                    aria-labelledby="articles-tab">
+                    <div id="content-search-results" class="content-grid-header"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row related py-5 building-recommendations">
+    <div class="col-12">
+        <h2 class="building-recommendations-title">Ap&ecirc;s que voc&ecirc; pode gostar:</h2>
+    </div>
+    <div class="col-12">
+        <ul class="nav nav-tabs mb-3" id="enterprises-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link border-0 enterprises-tab-nav-link active" id="oferta-tab" data-toggle="tab"
+                    href="#em-oferta" role="tab" aria-controls="em-oferta" aria-selected="true">Em oferta</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link enterprises-tab-nav-link border-0" id="recomendados-tab" data-toggle="tab"
+                    href="#recomendados" role="tab" aria-controls="recomendados" aria-selected="false">Recomendados</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link enterprises-tab-nav-link border-0" id="em-alta-tab" data-toggle="tab" href="#em-alta"
+                    role="tab" aria-controls="em-alta" aria-selected="false">Em alta</a>
+            </li>
+        </ul>
+        <div class="tab-content pt-4" id="enterprisesTabContent">
+            <div class="tab-pane fade show active" id="em-oferta" role="tabpanel" aria-labelledby="ofertas-tab">
+                <div class="row building-recommendations-slider">
+                    
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-agua-branca.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/01/13/16/22/007becfdee2c9916319e6393fbe74de858fab332.jpg"
+                            alt="Condom&iacute;nio Residencial MAPP Barra Funda - &Aacute;gua Branca"
+                            title="Condom&iacute;nio Residencial MAPP Barra Funda - &Aacute;gua Branca"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 e 2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$205.164,21</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-perdizes.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/01/13/16/22/007becfdee2c9916319e6393fbe74de858fab332.jpg"
+                            alt="Condom&iacute;nio Residencial MAPP Barra Funda - Perdizes"
+                            title="Condom&iacute;nio Residencial MAPP Barra Funda - Perdizes"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 e 2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$225.751,18</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/portal-barra-funda-vila-rio-branco.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/06/02/15/59/f7d2a1e6f5d5cc84bc44b8a881240b91fafc35e6.jpg"
+                            alt="Condom&iacute;nio Residencial Portal Barra Funda - Vila Rio Branco"
+                            title="Condom&iacute;nio Residencial Portal Barra Funda - Vila Rio Branco"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 e 2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$257.500,00</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-memorial.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/01/13/16/22/007becfdee2c9916319e6393fbe74de858fab332.jpg"
+                            alt="Condom&iacute;nio Residencial MAPP Barra Funda - Memorial"
+                            title="Condom&iacute;nio Residencial MAPP Barra Funda - Memorial"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 e 2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Lan&ccedil;amento
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$213.016,25</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/portal-pacaembu-vila-antartica.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2024/02/23/10/22/5347b372e0e10f018ed50b34c0a9e3e7d212077f.jpg"
+                            alt="Condom&iacute;nio Portal Pacaembu - Vila Ant&aacute;rtica"
+                            title="Condom&iacute;nio Portal Pacaembu - Vila Ant&aacute;rtica"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Lan&ccedil;amento
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$243.261,24</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="recomendados" role="tabpanel" aria-labelledby="recomendados-tab">
+                <div class="row building-recommendations-slider">
+                    
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                
+                    
+                    <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-memorial.html">
+                
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/01/13/16/22/007becfdee2c9916319e6393fbe74de858fab332.jpg"
+                            alt="Condom&iacute;nio Residencial MAPP Barra Funda - Memorial"
+                            title="Condom&iacute;nio Residencial MAPP Barra Funda - Memorial"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 e 2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Lan&ccedil;amento
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$213.016,25</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                
+                    
+                    <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-perdizes.html">
+                
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/01/13/16/22/007becfdee2c9916319e6393fbe74de858fab332.jpg"
+                            alt="Condom&iacute;nio Residencial MAPP Barra Funda - Perdizes"
+                            title="Condom&iacute;nio Residencial MAPP Barra Funda - Perdizes"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 e 2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$225.751,18</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                
+                    
+                    <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/portal-pacaembu-vila-antartica.html">
+                
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2024/02/23/10/22/5347b372e0e10f018ed50b34c0a9e3e7d212077f.jpg"
+                            alt="Condom&iacute;nio Portal Pacaembu - Vila Ant&aacute;rtica"
+                            title="Condom&iacute;nio Portal Pacaembu - Vila Ant&aacute;rtica"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Lan&ccedil;amento
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$243.261,24</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                
+                    
+                    <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/portal-barra-funda-vila-rio-branco.html">
+                
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/06/02/15/59/f7d2a1e6f5d5cc84bc44b8a881240b91fafc35e6.jpg"
+                            alt="Condom&iacute;nio Residencial Portal Barra Funda - Vila Rio Branco"
+                            title="Condom&iacute;nio Residencial Portal Barra Funda - Vila Rio Branco"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 e 2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$257.500,00</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                
+                    
+                    <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-agua-branca.html">
+                
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/01/13/16/22/007becfdee2c9916319e6393fbe74de858fab332.jpg"
+                            alt="Condom&iacute;nio Residencial MAPP Barra Funda - &Aacute;gua Branca"
+                            title="Condom&iacute;nio Residencial MAPP Barra Funda - &Aacute;gua Branca"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 e 2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$205.164,21</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+                </div>
+                <div class="row einstein-slot d-none">
+                    
+	 
+
+	
+                </div>
+            </div>
+            <div class="tab-pane fade" id="em-alta" role="tabpanel" aria-labelledby="em-alta-tab">
+                <div class="row building-recommendations-slider">
+                    
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-memorial.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/01/13/16/22/007becfdee2c9916319e6393fbe74de858fab332.jpg"
+                            alt="Condom&iacute;nio Residencial MAPP Barra Funda - Memorial"
+                            title="Condom&iacute;nio Residencial MAPP Barra Funda - Memorial"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 e 2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Lan&ccedil;amento
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$213.016,25</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-perdizes.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/01/13/16/22/007becfdee2c9916319e6393fbe74de858fab332.jpg"
+                            alt="Condom&iacute;nio Residencial MAPP Barra Funda - Perdizes"
+                            title="Condom&iacute;nio Residencial MAPP Barra Funda - Perdizes"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 e 2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$225.751,18</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/portal-pacaembu-vila-antartica.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2024/02/23/10/22/5347b372e0e10f018ed50b34c0a9e3e7d212077f.jpg"
+                            alt="Condom&iacute;nio Portal Pacaembu - Vila Ant&aacute;rtica"
+                            title="Condom&iacute;nio Portal Pacaembu - Vila Ant&aacute;rtica"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Lan&ccedil;amento
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$243.261,24</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/portal-barra-funda-vila-rio-branco.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/06/02/15/59/f7d2a1e6f5d5cc84bc44b8a881240b91fafc35e6.jpg"
+                            alt="Condom&iacute;nio Residencial Portal Barra Funda - Vila Rio Branco"
+                            title="Condom&iacute;nio Residencial Portal Barra Funda - Vila Rio Branco"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 e 2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$257.500,00</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-norte/barra-funda/mapp-barra-funda-agua-branca.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/01/13/16/22/007becfdee2c9916319e6393fbe74de858fab332.jpg"
+                            alt="Condom&iacute;nio Residencial MAPP Barra Funda - &Aacute;gua Branca"
+                            title="Condom&iacute;nio Residencial MAPP Barra Funda - &Aacute;gua Branca"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Barra Funda - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 e 2 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$205.164,21</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+                </div>
+                <div class="row einstein-slot d-none">
+                    
+	 
+
+	
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+	 
+
+
+	
+    
+        <div class="section section__help position-relative py-5" style="width: 100%">
+    <div class="container text-center text-lg-left">
+        <div class="row">
+            <div class="col-12 pb-4">
+                <h2 class="section__help__title">Como podemos te ajudar?</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                        <h5 class="mb-4 section__help__subtitle">Encontrar meu apê</h5>
+                        <p class="mb-4">Quero ajuda para encontrar um apê que caiba no meu bolso! <br> #QueroSairDoAluguel</p>
+                        <a href="../../../../imoveis.html" class="btn btn-primary d-flex align-items-center justify-content-center rounded-pill px-4 py-3">
+                            <span class="icon icon-enterprise text-white mr-3"></span>
+                            Encontrar meu apê
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                        <h5 class="mb-4 section__help__subtitle">Condições de pagamento</h5>
+                        <p class="mb-4">Desejo descobrir se tenho condições financeiras para realizar a compra e realizar o meu sonho.</p>
+                        <a href="javascript:void(0)" class="btn__simulation btn btn-outline-primary d-flex align-items-center justify-content-center rounded-pill px-4 py-3">
+                            <span class="icon icon-calc text-primary-plano mr-3"></span>
+                            Simular uma compra
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h5 class="mb-4 section__help__subtitle">Tenho dúvidas</h5>
+                        <p class="mb-4">Ainda tenho dúvidas sobre: como comprar, renda familiar, fluxos de pagamentos e outros temas financeiros.</p>
+                        <a href="../../../../galeria-de-video.html" class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-pill px-4 py-3">
+                            <span class="icon icon-play-circle text-primary-plano mr-3"></span>
+                            Ir para galeria de vídeos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    
+
+ 
+	
+

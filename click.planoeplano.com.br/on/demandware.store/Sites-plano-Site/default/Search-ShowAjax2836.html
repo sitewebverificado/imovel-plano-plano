@@ -1,0 +1,2901 @@
+
+    
+
+<div class="container px-4 px-md-2">
+    <div class="banner-plano hero hero-padding slant-down search-banner border-bottom row py-4" style="background-image: none">
+        
+        <div class="col-12 col-lg-4 mb-0 mb-md-4 mb-lg-0">
+            <h1 class="search--title">
+                Encontre aqui o seu pr&oacute;ximo endere&ccedil;o:
+            </h1>
+        </div>
+        <div class="col-12 col-md-auto ml-md-auto d-block d-md-flex align-items-end">
+            <form action="#" class="form">
+                <div class="d-flex flex-wrap nav-filters js-nav-filters">
+                    
+                    <div class="layoutDivRegiao col-6 col-md-auto py-3 py-md-0">
+                        
+                        <select class="custom-select search-custom-select border-0 js-regionFilter js-regionFilterMore">
+
+                            <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=imoveis">
+                                Regi&atilde;o de Interesse
+                            </option>
+
+                            
+                                <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-centro" >
+                                    S&atilde;o Paulo - Centro
+                                </option>
+                            
+                                <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-leste" >
+                                    S&atilde;o Paulo - Zona Leste
+                                </option>
+                            
+                                <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-norte" >
+                                    S&atilde;o Paulo - Zona Norte
+                                </option>
+                            
+                                <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-oeste" >
+                                    S&atilde;o Paulo - Zona Oeste
+                                </option>
+                            
+                                <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-sul" >
+                                    S&atilde;o Paulo - Zona Sul
+                                </option>
+                            
+                        </select>
+                    </div>
+
+                    
+                    <div class="layoutDivbair col-6 col-md-auto py-3 py-md-0">
+                        
+
+                        <div class="multiple-select neighborhood-moba custom-select search-custom-select border-0">
+                            <span class="multiple-select-default js-multipleSelectToggle">
+                                
+                                    Bairro<span id="bairro"></span>
+                                
+                            </span>
+                            <div class="multiple-select-wrapper wrapper-left-desk">
+                                
+                                    <span class="js-multipleFilter multiple-select-option"
+                                        data-url="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=district&amp;prefv1=Sa%c3%bade&amp;prefn2=dormitoryQuantity&amp;prefv2=1">
+                                        <span
+                                            class="custom-form-check-input getFilterBair ">
+                                            <i class="icon icon-check text-white font-size-xs"></i>
+                                        </span>
+                                        Sa&uacute;de
+                                    </span>
+                                
+                            </div>
+                        </div>
+                        <span aria-hidden="true" class="filterClearURL clearFilterIndv fa fa-fw fa-times clearFilBairro d-none text-danger ml-3" data-url="null"></span>
+                    </div>
+
+                    
+                    <div class="layoutDivStatus col-6 col-md-auto py-3 py-md-0">
+                        <div class="multiple-select custom-select search-custom-select border-0">
+                            <span class="multiple-select-default js-multipleSelectToggle">
+                                
+                                    Status da Obra<span id="status"></span>
+                                
+                            </span>
+                            <div class="multiple-select-wrapper wrapper-left-desk">
+                                
+                                    <span class="js-multipleFilter multiple-select-option"
+                                        data-url="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=dormitoryQuantity&amp;prefv2=1">
+                                        <span
+                                            class="custom-form-check-input getStatusObra ">
+                                            <i class="icon icon-check text-white font-size-xs"></i>
+                                        </span>
+                                        Em constru&ccedil;&atilde;o
+                                    </span>
+                                
+                            </div>
+                        </div>
+                        <span aria-hidden="true" class="filterClearURL clearFilterIndv fa fa-fw fa-times clearFilStatus d-none text-danger ml-3" data-url="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=buildingStatus&amp;prefv1=&amp;prefn2=dormitoryQuantity&amp;prefv2=1"></span>
+                    </div>
+                    
+                    <div class="layoutDivFilters adj-moba col-12 col-md-auto py-3 py-md-0 px-0 px-md-2 mt-4 mt-md-0">
+                        <button type="button" class="btn btn-link btn-filters adj-moba text-dark font-size-md"
+                            data-toggle="modal" data-target="#moreFilters">
+                            <span class="d-none d-md-inline-block">Mais Filtros<span id="getMoreFilter"></span></span>
+                            <span class="d-flex d-md-none align-items-center filterMobile"><img src="../../../demandware.static/Sites-plano-Site/-/default/dw2bd7bab2/images/filter-btn.png" alt="Filtrar resultados" />Filtrar resultados<span id="getMoreFilterMobile" class="getMoreFilterMobile d-none"></span></span>
+                        </button>
+                        <span aria-hidden="true" class="clearFilterIndv fa fa-fw fa-times clearFilMore d-none text-danger ml-3 js-reset-search" data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude"></span>
+                    </div>
+                </div>
+                <div id="moreFilters" class="modal search-more-filter pr-0">
+    <div class="modal-dialog search__modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content rounded-0 border-0 min-vh-100 py-4 pl-md-4 pr-md-5">
+            <div class="modal-body custom-modal-scrollable pr-md-5 mr-md-5">
+                <div class="container-fluid more-filters-modal">
+                    <button type="button" class="close d-md-none" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    
+                    <div class="row">
+                        <div class="col-8">
+                            <h3 class="font-size-xl letter-spacing">
+                                Utilize os filtros para um melhor resultado:
+                            </h3>
+                        </div>
+                        <div class="col-4">
+                            <img src="../../../demandware.static/Sites-plano-Site/-/default/dw22030df1/images/logo-mcmv.webp" alt="Minha Casa Minha Vida"
+                                width="80%" loading="lazy" />
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <p>
+                                Onde voc&ecirc; deseja morar?
+                            </p>
+                        </div>
+                        
+                        <div class="col-12 col-md-6 mb-3 mb-md-0">
+                            
+                            <select class="custom-select search-custom-select js-regionFilterMore">
+                                <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=imoveis">
+                                    Regi&atilde;o de Interesse
+                                </option>
+                                
+                                    <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-centro" >
+                                        S&atilde;o Paulo - Centro
+                                    </option>
+                                
+                                    <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-leste" >
+                                        S&atilde;o Paulo - Zona Leste
+                                    </option>
+                                
+                                    <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-norte" >
+                                        S&atilde;o Paulo - Zona Norte
+                                    </option>
+                                
+                                    <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-oeste" >
+                                        S&atilde;o Paulo - Zona Oeste
+                                    </option>
+                                
+                                    <option value="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=sao-paulo-zona-sul" >
+                                        S&atilde;o Paulo - Zona Sul
+                                    </option>
+                                
+                            </select>
+                        </div>
+
+                        
+                        <div class="col-12 col-md-6 mb-3 mb-md-0">
+                            <div class="multiple-select custom-select search-custom-select">
+                                <span class="multiple-select-default js-multipleSelectToggle">
+                                    
+                                        Bairro
+                                    
+                                </span>
+                                <div class="multiple-select-wrapper">
+                                    
+                                        <span class="js-multipleFilter multiple-select-option"
+                                            data-url="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=district&amp;prefv1=Sa%c3%bade&amp;prefn2=dormitoryQuantity&amp;prefv2=1">
+                                            <span
+                                                class="custom-form-check-input ">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </span>
+                                            Sa&uacute;de
+                                        </span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <input type="hidden" class="js-checkedStatus" checked-status=""/>
+                                <p class="letter-spacing">
+                                    Qual tipo de im&oacute;vel voc&ecirc; est&aacute; buscando?
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-wrap">
+                                    <div class="refinements">
+                                        <div class="refinement">
+                                            <div class="col-sm-12">
+                                                <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0 noWrapFilters">
+                                                    
+                                                        <input type="hidden" class="js-statusValues"
+                                                            status-values="Em constru&ccedil;&atilde;o"
+                                                            url="Search-ShowAjax9ae6.html?cgid=saude&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=dormitoryQuantity&amp;prefv2=1"/>
+                                                        <li 
+                                                            class="form-check mb-3 pl-0">
+                                                            <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=buildingStatus&amp;prefv1=Em%20constru%c3%a7%c3%a3o&amp;prefn2=dormitoryQuantity&amp;prefv2=1"
+                                                                class="">
+                                                                
+                                                                        <input class="form-check-input d-none"
+                                                                            type="checkbox" value="" />
+                                                                
+                                                                <label class="custom-form-check-input">
+                                                                    <i
+                                                                        class="icon icon-check text-white font-size-xs"></i>
+                                                                </label>
+                                                                <span class=""
+                                                                aria-hidden="true">
+                                                                Em constru&ccedil;&atilde;o
+                                                                </span>
+                                                                <span class="sr-only selected-assistive-text">
+                                                                    
+                                                                    Refinar por Status da Obra: Em constru&ccedil;&atilde;o
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    
+
+                                        
+                    
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <input type="hidden" class="js-checkedDormitory" checked-dormitory=""/>
+                                <p class="letter-spacing">
+                                    Quantos dormit&oacute;rios voc&ecirc; procura?
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-wrap">
+                                    <div class="refinements">
+                                        <div class="refinement">
+                                            <div class="col-sm-12">
+                                                <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0 noWrapFilters">
+                                                    
+                                                        <input type="hidden" class="js-dormitoryValues"
+                                                            dormitory-values="1"
+                                                            url="Search-ShowAjax9b12.html?cgid=saude"/>
+                                                        <li 
+                                                            class="form-check mb-3 pl-0">
+                                                            <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude"
+                                                                class="">
+
+                                                                
+                                                                    <input class="form-check-input d-none"
+                                                                        type="checkbox" value="" checked />
+                                                                    
+                                                                <label class="custom-form-check-input">
+                                                                    <i
+                                                                        class="icon icon-check text-white font-size-xs"></i>
+                                                                </label>
+                                                                <span class="adjMobaSpan 
+                                                                    selected
+                                                                "
+                                                                aria-hidden="true">
+
+                                                                
+                                                                        1 Dormit&oacute;rio
+                                                                
+                                                                </span>
+                                                                <span class="sr-only selected-assistive-text">
+                                                                    selecionado
+                                                                    Atualmente refinado por N&uacute;mero de dormit&oacute;rios: 1
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    
+                                        
+                    
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <p class="letter-spacing">
+                                    Com garagem?
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-wrap">
+                                    <div class="refinements">
+                                        <div class="refinement">
+                                            <div class="col-sm-12">
+                                                <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0 noWrapFilters">
+                                                    
+                                                        <li 
+                                                            class="form-check mb-3 pl-0">
+                                                            <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=vacanciesQuantity&amp;prefv2=0"
+                                                                class="">
+
+                                                                
+                                                                        <input class="form-check-input d-none"
+                                                                            type="checkbox" value="" />
+                                                                
+                                                                <label class="custom-form-check-input">
+                                                                    <i
+                                                                        class="icon icon-check text-white font-size-xs"></i>
+                                                                </label>
+
+                                                                <span class="adjMobaSpan "
+                                                                aria-hidden="true">
+                                                                N&atilde;o
+                                                                </span>
+                                                                <span class="sr-only selected-assistive-text">
+                                                                    
+                                                                    Refinar por Garagem: 0
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    
+                    
+                    
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <p class="letter-spacing">
+                                    Com varanda?
+                                </p>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex flex-wrap">
+                                    <div class="refinements">
+                                        <div class="refinement">
+                                            <div class="col-sm-12">
+                                                <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0 noWrapFilters" id="balconyOptions">
+                                                    
+                                                        <li 
+                                                            class="form-check mb-3 pl-0">
+                                                            <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=balcony&amp;prefv1=Sim&amp;prefn2=dormitoryQuantity&amp;prefv2=1"
+                                                                class="">
+
+                                                                
+                                                                        <input class="form-check-input d-none"
+                                                                            type="checkbox" value="" />
+                                                                
+                                                                <label class="custom-form-check-input">
+                                                                    <i
+                                                                        class="icon icon-check text-white font-size-xs"></i>
+                                                                </label>
+
+                                                                <span class="adjMobaSpan "
+                                                                aria-hidden="true">
+                                                                Sim
+                                                                </span>
+                                                                <span class="sr-only selected-assistive-text">
+                                                                    
+                                                                    Refinar por Varanda: Sim
+                                                                </span>
+                                                            </button>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                    
+
+<div class="row mb-3 flex-wrap">
+    <div class="col-12">
+        <p>
+            Qual valor aproximado do ap&ecirc; que voc&ecirc; est&aacute; procurando?
+        </p>
+    </div>
+    <div class="col-12">
+        <div class="d-flex mb-4">
+            <div class="col">
+                <div class="input-group border rounded mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-transparent border-0 text-black-50 pr-1">
+                            Min.
+                        </span>
+                    </div>
+                    <input type="text" id="approximate-value-amount-min"
+                        class="form-control bg-transparent border-0 pl-0" readonly/>
+                </div>
+            </div>
+            <div class="col">
+                <div class="input-group border rounded mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-transparent border-0 text-black-50 pr-1">
+                            Max.
+                        </span>
+                    </div>
+                    <input type="text" id="approximate-value-amount-max"
+                        class="form-control bg-transparent border-0 pl-0" readonly/>
+                </div>
+            </div>
+        </div>
+        <div id="slider-range-approximate-value" class="refine-price-element" data-url="Search-ShowAjax2836.html?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1"
+            data-price-min="0" data-price-max="500000"
+            data-price-min-param="0" data-price-max-param="500000"></div>
+    </div>
+</div>
+<hr />
+
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <p class="letter-spacing js-checkedIncome" checked-income="">
+                Renda Familiar</p>
+        </div>
+        <div class="col-12">
+            <div class="d-flex flex-wrap">
+                <div class="refinements">
+                    <div class="refinement js-income">
+                        <div class="col-sm-12">
+                            <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0">
+                                
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=At%c3%a9%20R%24%201%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                At&eacute; R$ 1.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: At&eacute; R$ 1.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%201%2e500%20a%20R%24%201%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 1.500 a R$ 1.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 1.500 a R$ 1.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%202%2e000%20a%20R%24%202%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 2.000 a R$ 2.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 2.000 a R$ 2.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%202%2e500%20a%20R%24%202%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 2.500 a R$ 2.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 2.500 a R$ 2.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%203%2e000%20a%20R%24%203%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 3.000 a R$ 3.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 3.000 a R$ 3.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%203%2e500%20a%20R%24%203%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 3.500 a R$ 3.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 3.500 a R$ 3.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%204%2e000%20a%20R%24%204%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 4.000 a R$ 4.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 4.000 a R$ 4.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%204%2e500%20a%20R%24%204%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 4.500 a R$ 4.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 4.500 a R$ 4.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%205%2e000%20a%20R%24%205%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 5.000 a R$ 5.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 5.000 a R$ 5.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%205%2e500%20a%20R%24%205%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 5.500 a R$ 5.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 5.500 a R$ 5.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%206%2e000%20a%20R%24%206%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 6.000 a R$ 6.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 6.000 a R$ 6.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%206%2e500%20a%20R%24%206%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 6.500 a R$ 6.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 6.500 a R$ 6.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%207%2e000%20a%20R%24%207%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 7.000 a R$ 7.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 7.000 a R$ 7.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%207%2e500%20a%20R%24%207%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 7.500 a R$ 7.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 7.500 a R$ 7.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%208%2e000%20a%20R%24%208%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 8.000 a R$ 8.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 8.000 a R$ 8.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%208%2e500%20a%20R%24%208%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 8.500 a R$ 8.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 8.500 a R$ 8.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%209%2e000%20a%20R%24%209%2e499"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 9.000 a R$ 9.499
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 9.000 a R$ 9.499
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%209%2e500%20a%20R%24%209%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 9.500 a R$ 9.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 9.500 a R$ 9.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%2010%2e000%20a%20R%24%2011%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 10.000 a R$ 11.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 10.000 a R$ 11.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%2012%2e000%20a%20R%24%2013%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 12.000 a R$ 13.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 12.000 a R$ 13.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%2014%2e000%20a%20R%24%2015%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 14.000 a R$ 15.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 14.000 a R$ 15.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%2016%2e000%20a%20R%24%2017%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 16.000 a R$ 17.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 16.000 a R$ 17.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=De%20R%24%2018%2e000%20a%20R%24%2019%2e999"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                De R$ 18.000 a R$ 19.999
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: De R$ 18.000 a R$ 19.999
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=incomeLimit&amp;prefv2=Acima%20de%20R%2420%2e000"
+                                            class=" adjMobaFilters"
+                                            >
+
+                                            
+                                                    <input class="form-check-input d-none" type="checkbox" value="" />
+                                            
+                                            <label class="custom-form-check-input">
+                                                <i class="icon icon-check text-white font-size-xs"></i>
+                                            </label>
+                                            <span class="adjMobaSpan checked-label " aria-hidden="true">
+                                                Acima de R$20.000
+                                            </span>
+                                            <span class="sr-only selected-assistive-text">
+                                                
+                                                Refinar por Renda Familiar: Acima de R$20.000
+                                            </span>
+                                        </button>
+                                    </li>
+                            
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+
+
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <p class="letter-spacing">Comodidade</p>
+        </div>
+        <div class="col-12">
+            <div class="d-flex flex-wrap">
+                <div class="refinements">
+                    <div class="refinement">
+                        <div class="col-sm-12">
+                            <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0">
+                                
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Churrasqueira"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Churrasqueira
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Churrasqueira
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Cinema"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Cinema
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Cinema
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Coworking"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Coworking
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Coworking
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Deck%20Molhado"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Deck Molhado
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Deck Molhado
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Espa%c3%a7o%20Delivery"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Espa&ccedil;o Delivery
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Espa&ccedil;o Delivery
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Fitness"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Fitness
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Fitness
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Fitness%20Externo"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Fitness Externo
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Fitness Externo
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Horta"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Horta
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Horta
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Lavanderia%20coletiva"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Lavanderia coletiva
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Lavanderia coletiva
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Mini%20Mercado"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Mini Mercado
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Mini Mercado
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Pet%20Care"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Pet Care
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Pet Care
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Pet%20Place"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Pet Place
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Pet Place
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Piscina%20Adulto"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Piscina Adulto
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Piscina Adulto
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Piscina%20Infantil"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Piscina Infantil
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Piscina Infantil
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Red%c3%a1rio"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Red&aacute;rio
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Red&aacute;rio
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Rooftop"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Rooftop
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Rooftop
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=leisure&amp;prefv2=Sal%c3%a3o%20de%20Festas%20Gourmet"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Sal&atilde;o de Festas Gourmet
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Comodidade: Sal&atilde;o de Festas Gourmet
+</span>
+</button>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr />
+
+
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <p class="letter-spacing">Mobilidade
+                (Dica: Escolha uma regi&atilde;o antes para um melhor resultado)</p>
+        </div>
+        <div class="col-12">
+            <div class="d-flex flex-wrap">
+                <div class="refinements">
+                    <div class="refinement">
+                        <div class="col-sm-12">
+                            <ul class="d-lg-flex flex-lg-wrap row-cols-lg-2 pl-0">
+                                
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=mobility&amp;prefv2=Bluefit"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Bluefit
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Bluefit
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=mobility&amp;prefv2=Carrefour%20Express%20S%c3%a3o%20Judas"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Carrefour Express S&atilde;o Judas
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Carrefour Express S&atilde;o Judas
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=mobility&amp;prefv2=Clube%20Esportivo%20Helvetia"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Clube Esportivo Helvetia
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Clube Esportivo Helvetia
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=mobility&amp;prefv2=Cobasi%20S%c3%a3o%20Judas"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Cobasi S&atilde;o Judas
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Cobasi S&atilde;o Judas
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=mobility&amp;prefv2=Esta%c3%a7%c3%a3o%20S%c3%a3o%20Judas"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Esta&ccedil;&atilde;o S&atilde;o Judas
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Esta&ccedil;&atilde;o S&atilde;o Judas
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=mobility&amp;prefv2=Hortifruti%20Uni%c3%a3o"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Hortifruti Uni&atilde;o
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Hortifruti Uni&atilde;o
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=mobility&amp;prefv2=Hospital%20Sancta%20Maggiore%20PARIS"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Hospital Sancta Maggiore PARIS
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Hospital Sancta Maggiore PARIS
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=mobility&amp;prefv2=Santu%c3%a1rio%20S%c3%a3o%20Judas%20Tadeu"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Santu&aacute;rio S&atilde;o Judas Tadeu
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Santu&aacute;rio S&atilde;o Judas Tadeu
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=mobility&amp;prefv2=Shopping%20Plaza%20Sul"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Shopping Plaza Sul
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Shopping Plaza Sul
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=mobility&amp;prefv2=Terminal%20Jabaquara"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Terminal Jabaquara
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Terminal Jabaquara
+</span>
+</button>
+</li>
+
+                                    <li  class="form-check mb-3 pl-0">
+                                        <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;prefn2=mobility&amp;prefv2=Universidade%20S%c3%a3o%20Judas%20-%20Unidade%20Jabaquara"
+                                            class=" adjMobaFilters" >
+
+
+        <input class="form-check-input d-none" type="checkbox" value="" />
+
+<label class="custom-form-check-input">
+    <i class="icon icon-check text-white font-size-xs"></i>
+</label>
+<span class="adjMobaSpan "
+    aria-hidden="true">
+    Universidade S&atilde;o Judas - Unidade Jabaquara
+</span>
+<span class="sr-only selected-assistive-text">
+    
+    Refinar por Mobilidade: Universidade S&atilde;o Judas - Unidade Jabaquara
+</span>
+</button>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="mb-5" />
+
+<div class="row align-items-center more-filters-action">
+    <div class="col">
+        <div class="secondary-bar col-12 offset-sm-4 offset-md-0 col-sm-4 col-md-12">
+            <button class="btn btn-link text-black-50 text-underline js-reset-search"
+                data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude">
+                Limpar
+            </button>
+        </div>
+    </div>
+    <div class="col">
+        <a href="#" data-dismiss="modal" class="btn btn-primary rounded-pill py-2 px-0 px-lg-4 wefound">
+            
+    
+        
+            <span class="result-count-label d-flex justify-content-center flex-column flex-md-row">
+                <span>Encontramos&nbsp;</span>
+                <span>2 ap&ecirc;s</span>
+            </span>
+        
+        
+    
+
+</a>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+            </form>
+        </div>
+    </div>
+    <div class="search-results">
+        <div class="row">
+            <div class="tab-content col-12">
+                <div class="tab-pane active" id="product-search-results" role="tabpanel" aria-labelledby="product-tab">
+                    <div class="row grid-header pt-4 pb-3">
+                        
+                            <div class="result-count col-6 col-md-auto">
+                                
+    
+        
+            <span class="result-count-label d-flex justify-content-center flex-column flex-md-row">
+                <span>Encontramos&nbsp;</span>
+                <span>2 ap&ecirc;s</span>
+            </span>
+        
+        
+    
+
+
+                            </div>
+                        
+                        
+                        
+                            <div class="col-6 col-md-auto ml-md-auto">
+                                
+    <div class="sort-order-group">
+        <span class="sort-order-label">Ordenar por:</span>
+        <select name="sort-order" class="custom-select border-0" aria-label="Ordenar por">
+            <option aria-label="Selecione">Selecione</option>
+            
+            
+                <option class="product-name-ascending" value="Search-UpdateGrid37b2.html?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=product-name-ascending&amp;start=0&amp;sz=2"
+                    data-id="product-name-ascending"
+                    
+                >
+                    Ordenar : Nome A-Z
+                </option>
+            
+            
+            
+                <option class="product-name-descending" value="Search-UpdateGrid9e14.html?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=product-name-descending&amp;start=0&amp;sz=2"
+                    data-id="product-name-descending"
+                    
+                >
+                    Ordenar : Nome Z-A
+                </option>
+            
+            
+            
+                <option class="price-high-to-low" value="Search-UpdateGrida1ce.html?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=price-high-to-low&amp;start=0&amp;sz=2"
+                    data-id="price-high-to-low"
+                    
+                >
+                    Ordenar : Pre&ccedil;o Asc.
+                </option>
+            
+            
+            
+                <option class="price-low-to-high" value="Search-UpdateGrid3c4a.html?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=price-low-to-high&amp;start=0&amp;sz=2"
+                    data-id="price-low-to-high"
+                    
+                >
+                    Ordenar : Pre&ccedil;o Desc.
+                </option>
+            
+            
+            
+                <option class="product-relevance" value="Search-UpdateGrid7a6f.html?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=product-relevance&amp;start=0&amp;sz=2"
+                    data-id="product-relevance"
+                    
+                >
+                    Ordenar : Relev&acirc;ncia
+                </option>
+            
+            
+            
+                <option class="meter-price-low-to-high" value="Search-UpdateGrid96cc.html?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=meter-price-low-to-high&amp;start=0&amp;sz=2"
+                    data-id="meter-price-low-to-high"
+                    
+                >
+                    Ordenar : Valor por M&sup2;
+                </option>
+            
+            
+            
+            
+            
+                <option class="price-highest-low-to-low" value="Search-UpdateGridd4bf.html?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=price-highest-low-to-low&amp;start=0&amp;sz=2"
+                    data-id="price-highest-low-to-low"
+                    
+                >
+                    Ordenar : Maior Pre&ccedil;o
+                </option>
+            
+            
+        </select>
+    </div>
+
+
+                            </div>
+                            
+                        
+                    </div>
+
+                    
+                        
+                        <div class="row">
+                            
+                            <div class="col-sm-12 col-md-12">
+                                
+                                <div class="row filter-bar d-none">
+                                    <ul>
+    
+        
+            <li class="filter-value">
+                <button data-href="/on/demandware.store/Sites-plano-Site/default/Search-ShowAjax?cgid=saude" class="btn text-left">
+                    <span aria-hidden="true">1</span>
+                    <span class="sr-only">
+                        Remover filtro Atualmente refinado por N&uacute;mero de dormit&oacute;rios: 1button.close=Fechar
+                    </span>
+                </button>
+            </li>
+        
+    
+</ul>
+
+                                </div>
+                                
+                                <div class="row product-grid" itemtype="http://schema.org/SomeProducts"
+                                    itemid="#product">
+                                    
+    <div class="col-12 col-md-6 col-lg-3 mb-4 productTileWrapper compareCheck">
+        <!-- CQuotient Activity Tracking (viewCategory-cquotient.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+(function(){
+try {
+    if(window.CQuotient) {
+	var cq_params = {};
+	
+	cq_params.cookieId = window.CQuotient.getCQCookieId();
+	cq_params.userId = window.CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.accumulate = true;
+	cq_params.products = [{
+	    id: 'a0K4v00000g0G8vEAE',
+	    sku: ''
+	}];
+	cq_params.categoryId = 'saude';
+	cq_params.refinements = '[{\"name\":\"dormitoryQuantity\",\"value\":\"1\"},{\"name\":\"Category\",\"value\":\"saude\"}]';
+	cq_params.personalized = 'false';
+	cq_params.sortingRule = '__UNDEFINED__';
+	cq_params.imageUUID = '__UNDEFINED__';
+	cq_params.realm = "BJDB";
+	cq_params.siteId = "plano";
+	cq_params.instanceType = "prd";
+	cq_params.queryLocale = "default";
+	cq_params.locale = window.CQuotient.locale;
+	
+	if(window.CQuotient.sendActivity)
+	    window.CQuotient.sendActivity(CQuotient.clientId, 'viewCategory', cq_params);
+	else
+	    window.CQuotient.activities.push({
+	    	activityType: 'viewCategory',
+	    	parameters: cq_params
+	    });
+  }
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewCategoryProduct-active_data.js) */
+(function(){
+try {
+	if (dw.ac) {
+		var search_params = {};
+		search_params.persd = 'false';
+		search_params.refs = '[{\"name\":\"dormitoryQuantity\",\"value\":\"1\"},{\"name\":\"Category\",\"value\":\"saude\"}]';
+		search_params.sort = '';
+		search_params.imageUUID = '';
+		search_params.searchID = 'f68fe51e-96b7-4bd6-aa4b-4c2690dd0250';
+		search_params.locale = 'default';
+		search_params.queryLocale = 'default';
+		search_params.showProducts = 'true';
+		dw.ac.applyContext({category: "saude", searchData: search_params});
+		if (typeof dw.ac._scheduleDataSubmission === "function") {
+			dw.ac._scheduleDataSubmission();
+		}
+	}
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewProduct-active_data.js) */
+dw.ac._capture({id: "a0K4v00000g0G8vEAE", type: "searchhit"});
+/* ]]> */
+// -->
+</script>
+            
+
+<div class="product" data-pid="a0K4v00000g0G8vEAE">
+    <div class="product-tile">
+    <!-- dwMarker="product" dwContentID="ab388a6eefce1949ad6d3cefd4" -->
+    <div class="image-container">
+        <article class="card card-enterprise rounded-0 border-0 my-0" id="a0K4v00000g0G8vEAE">
+            <div id="pdpCarousel-a0K4v00000g0G8vEAE" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner product-tile-img-container" style="overflow:visible;">
+        
+            
+            <a href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-ubiatans-by-plano-plano.html">
+        
+
+
+            
+                <div class='carousel-item active'>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/10/d0e5f57455da0dc546a18b25abb9bb5b61ccfacf-thumbnail.jpg" class="w-100" alt="Fachada - Perspectiva Ilustrada image number 0"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/10/2e45597f672b0d8b2cf056f1730c119f2d84732e-thumbnail.jpg" class="w-100" alt="Piscina - Perspectiva Ilustrada image number 1"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/10/6858328f97ed913cf4e94d8b0955fe4d39f7bb4c-thumbnail.jpg" class="w-100" alt="Portaria - Perspectiva Ilustrada image number 2"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/10/ed84019a061ca0a4b20e206ecc4cfac991dabbe5-thumbnail.jpg" class="w-100" alt="Rooftop - Perspectiva Ilustrada image number 3"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/10/06b7224417f171d69831c7e03c055db59da1111a-thumbnail.jpg" class="w-100" alt="Lounge - Perspectiva Ilustrada image number 4"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/10/a6a8b34ccd5fccaaf3e8550c5f49f0a0e339cb5a-thumbnail.jpg" class="w-100" alt="Pet Place - Perspectiva Ilustrada image number 5"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/11/331c37c3eb2277d15b39048e2d7913b5b20ba62e-thumbnail.jpg" class="w-100" alt="Coworking - Perspectiva Ilustrada image number 6"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/11/abe68b08d59815e4d3fdf5ff6445920c12138832-thumbnail.jpg" class="w-100" alt="Sal&atilde;o de festas - Perspectiva Ilustrada image number 7"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/11/e63697542a6d1d42cedaeebcd7f233d7ba100577-thumbnail.jpg" class="w-100" alt="Fitness - Perspectiva Ilustrada image number 8"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/11/58f92bdb703f69a9fba391c56b24d681e94b0091-thumbnail.jpg" class="w-100" alt="Lobby Residencial - Perspectiva Ilustrada image number 9"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/11/3e762353f4ea6d4f57c38a516f1c28efed3d5f7e-thumbnail.jpg" class="w-100" alt="Minimarket - Perspectiva Ilustrada (As &aacute;reas que s&atilde;o entregues equipadas constam expressamente no Memorial Descritivo. A &aacute;rea ilustrada &eacute; uma sugest&atilde;o de uso e depende de contrata&ccedil;&atilde;o do servi&ccedil;o/infraestrutura/decora&ccedil;&atilde;o pelo condom&iacute;nio). image number 10"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/11/e51614273ff09838e288e8335bc43c1afc71bd75-thumbnail.jpg" class="w-100" alt="Pet Care - Perspectiva Ilustrada image number 11"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/11/864e13490a23d3e09aeb6cbb779daa37fedce580-thumbnail.jpg" class="w-100" alt="Lavanderia - Perspectiva Ilustrada image number 12"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/11/7903e6a51d6d59fafbe8fe35f22795f5c0fe689c-thumbnail.jpg" class="w-100" alt="Sportsbar - Perspectiva Ilustrada image number 13"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/10/0fb979eb8d234718afff198d8e5ccbcca78354b6-thumbnail.jpg" class="w-100" alt="Acesso N&atilde;o Residencial  - Perspectiva Ilustrada  image number 14"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/11/0e3a53a8f69926d46a17e39b8c4062fd7e25844a-thumbnail.jpg" class="w-100" alt="Acesso N&atilde;o Residencial  - Perspectiva Ilustrada  image number 15"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/11/a6fe4a68c6018a2ed8ee8667fd3bb5f205383c86-thumbnail.jpg" class="w-100" alt="Lavanderia N&atilde;o Residencial - Perspectiva Ilustrada image number 16"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/22/11/11/6133123649a69c21a8d5121378185e8407894adc-thumbnail.jpg" class="w-100" alt="Fitness N&atilde;o Residencial - Perspectiva Ilustrada image number 17"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/1ed5fe153e7042cbf364143c5035d51108972667-thumbnail.jpg" class="w-100" alt="Cozinha e estar image number 18"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/6ed8eb8ab4c75370e0baa07422a6464b0061ff67-thumbnail.jpg" class="w-100" alt="Cozinha e estar image number 19"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/920249f70c2be95d1983885772defbd505ec656f-thumbnail.jpg" class="w-100" alt="Estar image number 20"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/9c7221cc9cb74a5666eef2163e5c18a712c4fe7f-thumbnail.jpg" class="w-100" alt="&Aacute;rea de servi&ccedil;o image number 21"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/7b7cffa98c0c8ee8238a069bf921fcf5208fadf1-thumbnail.jpg" class="w-100" alt="Cozinha e &aacute;rea de servi&ccedil;o image number 22"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/9460cd72e1477e492782fee385c059c3e6d664a7-thumbnail.jpg" class="w-100" alt="Cozinha image number 23"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/5a9c46918b4ccc77513fc83409644995e9480be6-thumbnail.jpg" class="w-100" alt="Varanda image number 24"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/7dc7eae9042f2c15e31e5abf8ab2a504e8e5d9e6-thumbnail.jpg" class="w-100" alt="Churrasqueira image number 25"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/902c1e131c1a8e2868a7f34cce1c610ca3b2c660-thumbnail.jpg" class="w-100" alt="Home office image number 26"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/0f814945f2749c7a85d396bcf76bef1ffb2e57bb-thumbnail.jpg" class="w-100" alt="Su&iacute;te image number 27"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/fba148c1772ec748485973e76b53776e9ca9904c-thumbnail.jpg" class="w-100" alt="Su&iacute;te image number 28"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/45a9db04b97fb4fe878293cb75269cd761eb525c-thumbnail.jpg" class="w-100" alt="Banho image number 29"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/17/01/213defe896f08e7940a72e8fd9a267e4aebdc45f-thumbnail.jpg" class="w-100" alt="Banho image number 30"
+                        itemprop="image" />
+                </div>
+            
+        </a>
+    </div>
+    
+        <button class="carousel-control-prev" type="button" data-target=" #pdpCarousel-a0K4v00000g0G8vEAE"
+            data-slide="prev">
+            <i class="icon icon-left text-white"></i>
+            <span class="sr-only">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target=" #pdpCarousel-a0K4v00000g0G8vEAE"
+            data-slide="next">
+            <i class="icon icon-right text-white"></i>
+            <span class="sr-only">Pr&oacute;ximo</span>
+        </button>
+    
+    
+    
+
+    <button
+    class="wishlist-link-pdp wishlistTile wishlist-button-pdp "
+    data-href="/on/demandware.store/Sites-plano-Site/default/Wishlist-AddProduct">
+    <i class="fa fa-heart-o disabled"></i>
+</button>
+<button
+    class="wishlistTileRemove remove-from-wish-list wishlist-button-pdp d-none"
+    data-href="/on/demandware.store/Sites-plano-Site/default/Wishlist-RemoveProduct?pid=a0K4v00000g0G8vEAE">
+    <i class="fa fa-heart"></i>
+</button>
+        
+</div>
+            <div class="card-body px-0">
+                <h3 class="card-enterprise--name">
+    
+        
+        <a href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-ubiatans-by-plano-plano.html">Mist&aacute; Ubiatans by Plano&amp;Plano</a>
+    
+
+</h3>
+<p class="card-enterprise--city d-flex justify-content-start">
+    <i class="icon icon-pin font-size-md mx-2"></i>
+
+    
+        
+        <a class="card-enterprise--district" href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-ubiatans-by-plano-plano.html">Sa&uacute;de - S&atilde;o Paulo</a>
+    
+</p>
+
+                <ul class="product-tile-spec-list">
+    <li class="font-size-sm d-flex align-items-center pr-3 domitory-number">
+        <i class="icon icon-dorms font-size-lg mr-2"></i>
+            1 Dorm.
+            
+    </li>
+    <li class="font-size-sm d-flex align-items-center building-status">
+         <i
+                    class="icon font-size-xl mr-2 icon-em-construcao"></i> </iselseif>
+            
+        Em constru&ccedil;&atilde;o
+    </li>
+</ul>
+
+                <div class="vertical carousel carousel-fade slide d-none" data-ride="carousel" data-interval="2000">
+    <div class="carousel-inner badge badge-pill badge-custom-light badge-options w-100 my-2">
+        
+    </div>
+</div>
+                <p class="card-enterprise--price mb-0">
+                    
+                        
+                        <span class="first-line">A partir de:</span>
+                    
+
+                
+                    
+    <div class="price">
+        <span class="range">
+    
+
+    
+    
+    <span>
+    
+
+    
+<p class="card-enterprise--price mb-0">
+    
+    <span class="sales">
+        
+            <span class="second-line" content="223501.08">
+        
+        
+        
+        R$223.501,08
+
+
+        <sup class="text-success font-size-sm d-none">(-10%)</sup></span>
+    </span>
+</p>
+</span>
+
+
+</span>
+
+    </div>
+
+                
+                <p class="card-enterprise--price">
+                
+                </p>
+                
+                    
+                    <a href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-ubiatans-by-plano-plano.html" title="Quero Conhecer" class="btn btn-primary btn-block rounded-pill py-3">Quero Conhecer</a>
+                
+                <label class="justify-content-center d-flex compareLabel">
+                    <span class="text-underline">Compare este produto</span>
+                    <input type="checkbox" class="invisible disChecked" name="compare" data-enterprise-id="001" data-product-id="a0K4v00000g0G8vEAE"/>
+                    <span class="btn btn-success rounded-circle card-button-selected p-0"><i class="icon icon-check text-white"></i></span>
+                </label>
+            </div>
+        </article>
+    </div>
+    <!-- END_dwmarker -->
+</div>
+
+</div>
+
+        
+    </div>
+    
+
+    <div class="col-12 col-md-6 col-lg-3 mb-4 productTileWrapper compareCheck">
+        <!-- CQuotient Activity Tracking (viewCategory-cquotient.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+(function(){
+try {
+    if(window.CQuotient) {
+	var cq_params = {};
+	
+	cq_params.cookieId = window.CQuotient.getCQCookieId();
+	cq_params.userId = window.CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.accumulate = true;
+	cq_params.products = [{
+	    id: 'a0K4v00000g0G8qEAE',
+	    sku: ''
+	}];
+	cq_params.categoryId = 'saude';
+	cq_params.refinements = '[{\"name\":\"dormitoryQuantity\",\"value\":\"1\"},{\"name\":\"Category\",\"value\":\"saude\"}]';
+	cq_params.personalized = 'false';
+	cq_params.sortingRule = '__UNDEFINED__';
+	cq_params.imageUUID = '__UNDEFINED__';
+	cq_params.realm = "BJDB";
+	cq_params.siteId = "plano";
+	cq_params.instanceType = "prd";
+	cq_params.queryLocale = "default";
+	cq_params.locale = window.CQuotient.locale;
+	
+	if(window.CQuotient.sendActivity)
+	    window.CQuotient.sendActivity(CQuotient.clientId, 'viewCategory', cq_params);
+	else
+	    window.CQuotient.activities.push({
+	    	activityType: 'viewCategory',
+	    	parameters: cq_params
+	    });
+  }
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewCategoryProduct-active_data.js) */
+(function(){
+try {
+	if (dw.ac) {
+		var search_params = {};
+		search_params.persd = 'false';
+		search_params.refs = '[{\"name\":\"dormitoryQuantity\",\"value\":\"1\"},{\"name\":\"Category\",\"value\":\"saude\"}]';
+		search_params.sort = '';
+		search_params.imageUUID = '';
+		search_params.searchID = 'f68fe51e-96b7-4bd6-aa4b-4c2690dd0250';
+		search_params.locale = 'default';
+		search_params.queryLocale = 'default';
+		search_params.showProducts = 'true';
+		dw.ac.applyContext({category: "saude", searchData: search_params});
+		if (typeof dw.ac._scheduleDataSubmission === "function") {
+			dw.ac._scheduleDataSubmission();
+		}
+	}
+} catch(err) {}
+})();
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (viewProduct-active_data.js) */
+dw.ac._capture({id: "a0K4v00000g0G8qEAE", type: "searchhit"});
+/* ]]> */
+// -->
+</script>
+            
+
+<div class="product" data-pid="a0K4v00000g0G8qEAE">
+    <div class="product-tile">
+    <!-- dwMarker="product" dwContentID="aa2149f5e97decc149fcf216b0" -->
+    <div class="image-container">
+        <article class="card card-enterprise rounded-0 border-0 my-0" id="a0K4v00000g0G8qEAE">
+            <div id="pdpCarousel-a0K4v00000g0G8qEAE" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner product-tile-img-container" style="overflow:visible;">
+        
+            
+            <a href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-tupinas-by-plano-plano.html">
+        
+
+
+            
+                <div class='carousel-item active'>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/20/b532de0de804cd38bfc6ee96a3505eea72fd4f53-thumbnail.jpg" class="w-100" alt="Fachada - Perspectiva Ilustrada image number 0"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/20/056eb362163fd76ed65a8837daee3eeb81fe90ca-thumbnail.jpg" class="w-100" alt="Piscina - Perspectiva Ilustrada image number 1"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/20/0e099b10612f2ff514c7aeb7b8ccf82d45fbc4b0-thumbnail.jpg" class="w-100" alt="Portaria - Perspectiva Ilustrada image number 2"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/21/bb5011c438681e91b766950b91beb813069554d8-thumbnail.jpg" class="w-100" alt="Living - Perspectiva Ilustrada image number 3"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/21/43c3462ffed4f339fcab633d151202e5125aca87-thumbnail.jpg" class="w-100" alt="Sal&atilde;o de festas - Perspectiva Ilustrada image number 4"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/21/76be276ed97dd1fac4caa46f7bd0d9d8ecf599d3-thumbnail.jpg" class="w-100" alt="Churrasqueira - Perspectiva Ilustrada image number 5"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/21/eaf97c26e1f2d6dc977b3f99d616e06a7f5263e7-thumbnail.jpg" class="w-100" alt="Coworking - Perspectiva Ilustrada image number 6"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/21/026c5bd7d98e46849579ff0e43340600cc419c45-thumbnail.jpg" class="w-100" alt="Delivery - Perspectiva Ilustrada image number 7"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/22/2bfab05187f347911c9e9019c8b548ade62ff6bd-thumbnail.jpg" class="w-100" alt="Fitness - Perspectiva Ilustrada image number 8"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/22/6a77a8b4a8642403f64e9613791690d248063d80-thumbnail.jpg" class="w-100" alt="Lavanderia Residencial - Perspectiva Ilustrada image number 9"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/22/cfd38fb10418e2abb8ba9c2caf65470147322333-thumbnail.jpg" class="w-100" alt="Lobby Residencial - Perspectiva Ilustrada image number 10"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/22/df8f249192a7670efac0f5fc6ec3263cceb1b77b-thumbnail.jpg" class="w-100" alt="Lounge de festas - Perspectiva Ilustrada image number 11"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/22/f60b0e42eacc294b5c22fabf730845984f16c558-thumbnail.jpg" class="w-100" alt="Mini Mercado - Perspectiva Ilustrada (As &aacute;reas que s&atilde;o entregues equipadas constam expressamente no Memorial Descritivo. A &aacute;rea ilustrada &eacute; uma sugest&atilde;o de uso e depende de contrata&ccedil;&atilde;o do servi&ccedil;o/infraestrutura/decora&ccedil;&atilde;o pelo condom&iacute;nio). image number 12"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/22/17ae363020642b1548ae7c0c3dd19df51133a773-thumbnail.jpg" class="w-100" alt="Pet Care - Perspectiva Ilustrada image number 13"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/22/c30275106c742bf2bca9a6a8addaea68d765101c-thumbnail.jpg" class="w-100" alt="Pet Place - Perspectiva Ilustrada image number 14"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/22/360370ad6b56c7a2483f4c6324474dcf67a6fdb7-thumbnail.jpg" class="w-100" alt="Rooftop - Perspectiva Ilustrada image number 15"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/08/16/18/23/4c06945916c57ecae8521cc5c7319bdc53a6d5fb-thumbnail.jpg" class="w-100" alt="Fitness externo - Perspectiva Ilustrada image number 16"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/52/987f4a0997069b1497f010cc865f4cc953dbb853-thumbnail.jpg" class="w-100" alt="Cozinha e estar image number 17"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/52/989126620c828f740b62c37456b8e4780a13c992-thumbnail.jpg" class="w-100" alt="Cozinha e estar image number 18"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/52/36804a603ea39437d5721f21b203d5a3918f703e-thumbnail.jpg" class="w-100" alt="Estar image number 19"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/53/3bdf695e482eedd1456b24a663c4dbba44770612-thumbnail.jpg" class="w-100" alt="Cozinha e &aacute;rea de servi&ccedil;o image number 20"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/53/e6a2db84ed3561b7860afca59e9d6f4f219c12bf-thumbnail.jpg" class="w-100" alt="Cozinha image number 21"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/53/7f6e5767821fe97474739e6bf4a377d913435e1f-thumbnail.jpg" class="w-100" alt="&Aacute;rea de servi&ccedil;o image number 22"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/53/0a7b3f7941e5c4fd5eb73e1d74a037b88ebc7da8-thumbnail.jpg" class="w-100" alt="Home office image number 23"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/53/a8fbe8951e13365bd1eeae2729321f2a5c666f1a-thumbnail.jpg" class="w-100" alt="Varanda image number 24"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/53/1f58d01e2a723974058ffab4d429519a89d4951a-thumbnail.jpg" class="w-100" alt="Churrasqueira image number 25"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/53/18e5bcb208cf3b7084253471398fb984eae03e18-thumbnail.jpg" class="w-100" alt="Su&iacute;te image number 26"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/53/ae2953f1e09c3088113f8df215d451049f1e0620-thumbnail.jpg" class="w-100" alt="Su&iacute;te image number 27"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/53/1c4e39932c1a85b0c298f538bb34117d5f988852-thumbnail.jpg" class="w-100" alt="Banho image number 28"
+                        itemprop="image" />
+                </div>
+            
+                <div class='carousel-item '>
+                    <img src="../../../../../cdn.planoeplano.com.br/2023/09/13/16/53/3fcfd14d103fc6ff00b879890911c9c2a0ca5c05-thumbnail.jpg" class="w-100" alt="Banho image number 29"
+                        itemprop="image" />
+                </div>
+            
+        </a>
+    </div>
+    
+        <button class="carousel-control-prev" type="button" data-target=" #pdpCarousel-a0K4v00000g0G8qEAE"
+            data-slide="prev">
+            <i class="icon icon-left text-white"></i>
+            <span class="sr-only">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target=" #pdpCarousel-a0K4v00000g0G8qEAE"
+            data-slide="next">
+            <i class="icon icon-right text-white"></i>
+            <span class="sr-only">Pr&oacute;ximo</span>
+        </button>
+    
+    
+    
+
+    <button
+    class="wishlist-link-pdp wishlistTile wishlist-button-pdp "
+    data-href="/on/demandware.store/Sites-plano-Site/default/Wishlist-AddProduct">
+    <i class="fa fa-heart-o disabled"></i>
+</button>
+<button
+    class="wishlistTileRemove remove-from-wish-list wishlist-button-pdp d-none"
+    data-href="/on/demandware.store/Sites-plano-Site/default/Wishlist-RemoveProduct?pid=a0K4v00000g0G8qEAE">
+    <i class="fa fa-heart"></i>
+</button>
+        
+</div>
+            <div class="card-body px-0">
+                <h3 class="card-enterprise--name">
+    
+        
+        <a href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-tupinas-by-plano-plano.html">Mist&aacute; Tupin&aacute;s by Plano&amp;Plano</a>
+    
+
+</h3>
+<p class="card-enterprise--city d-flex justify-content-start">
+    <i class="icon icon-pin font-size-md mx-2"></i>
+
+    
+        
+        <a class="card-enterprise--district" href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-tupinas-by-plano-plano.html">Sa&uacute;de - S&atilde;o Paulo</a>
+    
+</p>
+
+                <ul class="product-tile-spec-list">
+    <li class="font-size-sm d-flex align-items-center pr-3 domitory-number">
+        <i class="icon icon-dorms font-size-lg mr-2"></i>
+            1 Dorm.
+            
+    </li>
+    <li class="font-size-sm d-flex align-items-center building-status">
+         <i
+                    class="icon font-size-xl mr-2 icon-em-construcao"></i> </iselseif>
+            
+        Em constru&ccedil;&atilde;o
+    </li>
+</ul>
+
+                <div class="vertical carousel carousel-fade slide d-none" data-ride="carousel" data-interval="2000">
+    <div class="carousel-inner badge badge-pill badge-custom-light badge-options w-100 my-2">
+        
+    </div>
+</div>
+                <p class="card-enterprise--price mb-0">
+                    
+                        
+                        <span class="first-line">A partir de:</span>
+                    
+
+                
+                    
+    <div class="price">
+        <span class="range">
+    
+
+    
+    
+    <span>
+    
+
+    
+<p class="card-enterprise--price mb-0">
+    
+    <span class="sales">
+        
+            <span class="second-line" content="221391.58">
+        
+        
+        
+        R$221.391,58
+
+
+        <sup class="text-success font-size-sm d-none">(-10%)</sup></span>
+    </span>
+</p>
+</span>
+
+
+</span>
+
+    </div>
+
+                
+                <p class="card-enterprise--price">
+                
+                </p>
+                
+                    
+                    <a href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-tupinas-by-plano-plano.html" title="Quero Conhecer" class="btn btn-primary btn-block rounded-pill py-3">Quero Conhecer</a>
+                
+                <label class="justify-content-center d-flex compareLabel">
+                    <span class="text-underline">Compare este produto</span>
+                    <input type="checkbox" class="invisible disChecked" name="compare" data-enterprise-id="001" data-product-id="a0K4v00000g0G8qEAE"/>
+                    <span class="btn btn-success rounded-circle card-button-selected p-0"><i class="icon icon-check text-white"></i></span>
+                </label>
+            </div>
+        </article>
+    </div>
+    <!-- END_dwmarker -->
+</div>
+
+</div>
+
+        
+    </div>
+    
+
+
+<div class="col-12 grid-footer"
+     data-sort-options="{&quot;options&quot;:[{&quot;displayName&quot;:&quot;Ordenar : Nome A-Z&quot;,&quot;id&quot;:&quot;product-name-ascending&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=product-name-ascending&amp;start=0&amp;sz=2&quot;},{&quot;displayName&quot;:&quot;Ordenar : Nome Z-A&quot;,&quot;id&quot;:&quot;product-name-descending&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=product-name-descending&amp;start=0&amp;sz=2&quot;},{&quot;displayName&quot;:&quot;Ordenar : Pre&ccedil;o Asc.&quot;,&quot;id&quot;:&quot;price-high-to-low&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=price-high-to-low&amp;start=0&amp;sz=2&quot;},{&quot;displayName&quot;:&quot;Ordenar : Pre&ccedil;o Desc.&quot;,&quot;id&quot;:&quot;price-low-to-high&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=price-low-to-high&amp;start=0&amp;sz=2&quot;},{&quot;displayName&quot;:&quot;Ordenar : Relev&acirc;ncia&quot;,&quot;id&quot;:&quot;product-relevance&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=product-relevance&amp;start=0&amp;sz=2&quot;},{&quot;displayName&quot;:&quot;Ordenar : Valor por M&sup2;&quot;,&quot;id&quot;:&quot;meter-price-low-to-high&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=meter-price-low-to-high&amp;start=0&amp;sz=2&quot;},{&quot;displayName&quot;:&quot;Ordenar : Desconto&quot;,&quot;id&quot;:&quot;product-active-discount&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=product-active-discount&amp;start=0&amp;sz=2&quot;},{&quot;displayName&quot;:&quot;Ordenar : Maior Pre&ccedil;o&quot;,&quot;id&quot;:&quot;price-highest-low-to-low&quot;,&quot;url&quot;:&quot;https://click.planoeplano.com.br/on/demandware.store/Sites-plano-Site/default/Search-UpdateGrid?cgid=saude&amp;prefn1=dormitoryQuantity&amp;prefv1=1&amp;srule=price-highest-low-to-low&amp;start=0&amp;sz=2&quot;}],&quot;ruleId&quot;:null}"
+     data-page-size="7.0"
+     data-page-number="0"
+>
+    
+    
+
+    
+
+    <input type="hidden" class="permalink" value="../../../../imoveis/sao-paulo-zona-sul/saude4c4a.html?prefn1=dormitoryQuantity&amp;prefv1=1&amp;start=0&amp;sz=7" />
+    
+        <input type="hidden" class="category-id" value="saude" />
+    
+</div>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                </div>
+                
+                <div class="tab-pane container" id="content-search-results-pane" role="tabpanel"
+                    aria-labelledby="articles-tab">
+                    <div id="content-search-results" class="content-grid-header"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row related py-5 building-recommendations">
+    <div class="col-12">
+        <h2 class="building-recommendations-title">Ap&ecirc;s que voc&ecirc; pode gostar:</h2>
+    </div>
+    <div class="col-12">
+        <ul class="nav nav-tabs mb-3" id="enterprises-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link border-0 enterprises-tab-nav-link active" id="oferta-tab" data-toggle="tab"
+                    href="#em-oferta" role="tab" aria-controls="em-oferta" aria-selected="true">Em oferta</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link enterprises-tab-nav-link border-0" id="recomendados-tab" data-toggle="tab"
+                    href="#recomendados" role="tab" aria-controls="recomendados" aria-selected="false">Recomendados</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link enterprises-tab-nav-link border-0" id="em-alta-tab" data-toggle="tab" href="#em-alta"
+                    role="tab" aria-controls="em-alta" aria-selected="false">Em alta</a>
+            </li>
+        </ul>
+        <div class="tab-content pt-4" id="enterprisesTabContent">
+            <div class="tab-pane fade show active" id="em-oferta" role="tabpanel" aria-labelledby="ofertas-tab">
+                <div class="row building-recommendations-slider">
+                    
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-ubiatans-by-plano-plano.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/09/14/14/54/73aaf0050791ced388378ea0e28135e988c50074.jpg"
+                            alt="Condom&iacute;nio Mist&aacute; Ubiatans by Plano&amp;Plano"
+                            title="Condom&iacute;nio Mist&aacute; Ubiatans by Plano&amp;Plano"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Sa&uacute;de - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$223.501,08</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-tupinas-by-plano-plano.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/09/14/14/54/73aaf0050791ced388378ea0e28135e988c50074.jpg"
+                            alt="Condom&iacute;nio Mist&aacute; Tupin&aacute;s by Plano&amp;Plano"
+                            title="Condom&iacute;nio Mist&aacute; Tupin&aacute;s by Plano&amp;Plano"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Sa&uacute;de - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$221.391,58</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane fade" id="recomendados" role="tabpanel" aria-labelledby="recomendados-tab">
+                <div class="row building-recommendations-slider">
+                    
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                
+                    
+                    <a href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-ubiatans-by-plano-plano.html">
+                
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/09/14/14/54/73aaf0050791ced388378ea0e28135e988c50074.jpg"
+                            alt="Condom&iacute;nio Mist&aacute; Ubiatans by Plano&amp;Plano"
+                            title="Condom&iacute;nio Mist&aacute; Ubiatans by Plano&amp;Plano"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Sa&uacute;de - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$223.501,08</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                
+                    
+                    <a href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-tupinas-by-plano-plano.html">
+                
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/09/14/14/54/73aaf0050791ced388378ea0e28135e988c50074.jpg"
+                            alt="Condom&iacute;nio Mist&aacute; Tupin&aacute;s by Plano&amp;Plano"
+                            title="Condom&iacute;nio Mist&aacute; Tupin&aacute;s by Plano&amp;Plano"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Sa&uacute;de - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$221.391,58</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+                </div>
+                <div class="row einstein-slot d-none">
+                    
+	 
+
+	
+                </div>
+            </div>
+            <div class="tab-pane fade" id="em-alta" role="tabpanel" aria-labelledby="em-alta-tab">
+                <div class="row building-recommendations-slider">
+                    
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-ubiatans-by-plano-plano.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/09/14/14/54/73aaf0050791ced388378ea0e28135e988c50074.jpg"
+                            alt="Condom&iacute;nio Mist&aacute; Ubiatans by Plano&amp;Plano"
+                            title="Condom&iacute;nio Mist&aacute; Ubiatans by Plano&amp;Plano"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Sa&uacute;de - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$223.501,08</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+        <article class="card mini-card-enterprise border-0">
+            <div class="mini-card-enterprise--wrapper mb-4">
+                <div>
+                    
+                        
+                        <a href="../../../../imoveis/sao-paulo-zona-sul/saude/mista-tupinas-by-plano-plano.html">
+                    
+                        <img class="tile-image img-fluid"
+                            src="../../../../../cdn.planoeplano.com.br/2023/09/14/14/54/73aaf0050791ced388378ea0e28135e988c50074.jpg"
+                            alt="Condom&iacute;nio Mist&aacute; Tupin&aacute;s by Plano&amp;Plano"
+                            title="Condom&iacute;nio Mist&aacute; Tupin&aacute;s by Plano&amp;Plano"/>
+                    </a>
+                </div>
+                <div>
+                    <div class="card-body py-0 px-0">
+                        <p class="mini-card-enterprise--city d-flex align-items-center mb-2">
+                            <i class="icon icon-pin font-size-md mr-2"></i>
+                            Sa&uacute;de - S&atilde;o Paulo
+                        </p>
+                        <ul class="mini-card-enterprise--info list-group d-flex flex-row list-unstyled">
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pr-2">
+                                1 Dorms.
+                            </li>
+                            <li>
+                                <svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2.5" r="2" fill="black" />
+                                </svg>
+                            </li>
+                            <li class="nav-item font-size-sm d-flex align-items-center text-muted pl-2">
+                                Em constru&ccedil;&atilde;o
+                            </li>
+                        </ul>
+                        <p class="mini-card-enterprise--price mb-0">
+                            <span class="first-line">A partir de:</span>
+                            
+                                <span class="second-line">R$221.391,58</span>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+                </div>
+                <div class="row einstein-slot d-none">
+                    
+	 
+
+	
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+
+	 
+
+
+	
+    
+        <div class="section section__help position-relative py-5" style="width: 100%">
+    <div class="container text-center text-lg-left">
+        <div class="row">
+            <div class="col-12 pb-4">
+                <h2 class="section__help__title">Como podemos te ajudar?</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                        <h5 class="mb-4 section__help__subtitle">Encontrar meu apê</h5>
+                        <p class="mb-4">Quero ajuda para encontrar um apê que caiba no meu bolso! <br> #QueroSairDoAluguel</p>
+                        <a href="../../../../imoveis.html" class="btn btn-primary d-flex align-items-center justify-content-center rounded-pill px-4 py-3">
+                            <span class="icon icon-enterprise text-white mr-3"></span>
+                            Encontrar meu apê
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+                        <h5 class="mb-4 section__help__subtitle">Condições de pagamento</h5>
+                        <p class="mb-4">Desejo descobrir se tenho condições financeiras para realizar a compra e realizar o meu sonho.</p>
+                        <a href="javascript:void(0)" class="btn__simulation btn btn-outline-primary d-flex align-items-center justify-content-center rounded-pill px-4 py-3">
+                            <span class="icon icon-calc text-primary-plano mr-3"></span>
+                            Simular uma compra
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <h5 class="mb-4 section__help__subtitle">Tenho dúvidas</h5>
+                        <p class="mb-4">Ainda tenho dúvidas sobre: como comprar, renda familiar, fluxos de pagamentos e outros temas financeiros.</p>
+                        <a href="../../../../galeria-de-video.html" class="btn btn-outline-primary d-flex align-items-center justify-content-center rounded-pill px-4 py-3">
+                            <span class="icon icon-play-circle text-primary-plano mr-3"></span>
+                            Ir para galeria de vídeos
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+    
+
+ 
+	
+
